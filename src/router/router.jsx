@@ -5,6 +5,7 @@ import AuthenticationLayout from "@/layouts/AuthenticationLayout";
 import SigninPage from "@/pages/Authentication/SigninPage";
 import RegistrationPage from "@/pages/Authentication/RegistrationPage";
 import VerifyEmailPage from "@/pages/Authentication/VerifyEmailPage";
+import VerifyCodePage from "@/pages/Authentication/VerifyCodePage";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
             {
                 path: '/verify-email',
                 Component: VerifyEmailPage,
-            }
+            },
+            {
+                path: '/verify-otp',
+                Component: VerifyCodePage,
+            },
         ]
     }
 ]);

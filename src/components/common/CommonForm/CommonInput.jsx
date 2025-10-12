@@ -18,9 +18,6 @@ const CommonInput = ({ id, type, label, errors, register, placeholder, rules }) 
                 className={errors?.[id] ? "border-red-400 focus-visible:ring-red-400" : ""}
                 {...register(id, rules || { required: "This field is required" })}
             />
-            {errors?.[id] && (
-                <p className="text-sm text-red-500 mt-1">{errors[id].message}</p>
-            )}
         </div>
     );
 };

@@ -8,16 +8,16 @@ import { useNavigate } from "react-router";
 
 const formFields = [
     {
-        id: "email",
-        type: "email",
-        label: "Email",
-        placeholder: "Enter your Email",
-        rules: { required: "Email is required" },
+        id: "code",
+        type: "number",
+        label: "COde",
+        placeholder: "12345678",
+        rules: { required: "Code is required" },
     },
 ];
 
 
-export default function VerifyEmailPage() {
+export default function VerifyCodePage() {
     const navigate = useNavigate()
     const {
         register,
@@ -31,15 +31,15 @@ export default function VerifyEmailPage() {
         const formattedData = Object.entries(data)
             .map(([key, value]) => `${key}: ${value}`)
             .join("\n");
-        toast.success(formattedData);
 
-        navigate('/verify-otp')
+        toast.success(formattedData);
+        navigate('/set-password')
     };
 
     return (
         <div className=" w-full mx-auto space-y-8">
             <FormHeading
-                title={'Verify Email'}
+                title={'We will send verification code on your email ID'}
             />
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -55,6 +55,7 @@ export default function VerifyEmailPage() {
                         rules={field.rules}
                     />
                 ))}
+
 
                 {/* Sign in Button */}
                 <Button type="submit" className="w-full py-5">
