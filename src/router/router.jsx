@@ -4,6 +4,7 @@ import HomePage from "@/pages/Home/HomePage";
 import AuthenticationLayout from "@/layouts/AuthenticationLayout";
 import SigninPage from "@/pages/Authentication/SigninPage";
 import RegistrationPage from "@/pages/Authentication/RegistrationPage";
+import VerifyEmailPage from "@/pages/Authentication/VerifyEmailPage";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 Component: RegistrationPage,
+            },
+            {
+                path: '/verify-email',
+                Component: VerifyEmailPage,
             }
         ]
     }

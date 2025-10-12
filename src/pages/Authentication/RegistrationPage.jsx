@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import SocialSignin from "@/components/common/CommonForm/SocialSignin";
 import FormSeparator from "@/components/common/CommonForm/FormSeparator";
 import CommonInput from "@/components/common/CommonForm/CommonInput";
@@ -52,6 +52,9 @@ const formFields = [
 
 
 export default function RegistrationPage() {
+
+    const navigate = useNavigate()
+
     const {
         register,
         handleSubmit,
@@ -67,6 +70,7 @@ export default function RegistrationPage() {
             .join("\n");
 
         toast.success(formattedData);
+        navigate('/signin')
 
 
     };
@@ -102,7 +106,7 @@ export default function RegistrationPage() {
 
                 {/* Sign in Button */}
                 <Button type="submit" className="w-full py-5">
-                    Sign In
+                    Sign Up
                 </Button>
 
 

@@ -1,14 +1,13 @@
 import { useForm } from "react-hook-form";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
-import { Link, useNavigate } from "react-router";
-import FormHeading from "@/components/common/CommonForm/FormHeading";
+import { Link } from "react-router";
 import SocialSignin from "@/components/common/CommonForm/SocialSignin";
 import FormSeparator from "@/components/common/CommonForm/FormSeparator";
 import CommonInput from "@/components/common/CommonForm/CommonInput";
+import FormHeading from "@/components/common/CommonForm/FormHeading";
 
 
 const formFields = [
@@ -16,28 +15,13 @@ const formFields = [
         id: "email",
         type: "email",
         label: "Email",
-        placeholder: "you@example.com",
+        placeholder: "Enter your Email",
         rules: { required: "Email is required" },
-    },
-    {
-        id: "password",
-        type: "password",
-        label: "Password",
-        placeholder: "••••••••",
-        rules: {
-            required: "Password is required",
-            minLength: {
-                value: 6,
-                message: "Password must be at least 6 characters",
-            },
-        },
     },
 ];
 
 
-
-export default function SigninPage() {
-    const navigate = useNavigate()
+export default function VerifyEmailPage() {
     const {
         register,
         handleSubmit,
@@ -47,22 +31,18 @@ export default function SigninPage() {
     const onSubmit = (data) => {
         // toast.success("Signin was successful")
 
-
         const formattedData = Object.entries(data)
             .map(([key, value]) => `${key}: ${value}`)
             .join("\n");
 
         toast.success(formattedData);
-        navigate('/verify-email')
     };
 
     return (
         <div className=" w-full mx-auto space-y-8">
             <FormHeading
-                title={' Welcome back !'}
-                subtitle={"Enter your Credentials to access your account"}
+                title={'Verify Email'}
             />
-
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 {formFields.map((field) => (
@@ -83,7 +63,7 @@ export default function SigninPage() {
                 <div className="flex items-center space-x-2">
                     <Checkbox id="remember" {...register("remember")} />
                     <Label htmlFor="remember" className={'text-primary font-medium text-sm'} >
-                        Remember me
+                        I agree to the <span className="underline">terms and policy</span>
                     </Label>
                 </div>
 
@@ -105,9 +85,9 @@ export default function SigninPage() {
 
             {/* Footer */}
             <p className="text-center text-base text-primary font-medium">
-                Don’t have an account?{" "}
-                <Link to="/signup" className="hover:underline text-[#B45C3D]">
-                    Sign up
+                Already have an account?{" "}
+                <Link to="/signin" className="hover:underline text-[#B45C3D]">
+                    Sign in
                 </Link>
             </p>
         </div>
