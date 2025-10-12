@@ -7,6 +7,7 @@ import RegistrationPage from "@/pages/Authentication/RegistrationPage";
 import VerifyEmailPage from "@/pages/Authentication/VerifyEmailPage";
 import VerifyCodePage from "@/pages/Authentication/VerifyCodePage";
 import SetPasswordPage from "@/pages/Authentication/SetPasswordPage";
+import SelectRolePage from "@/pages/Authentication/SelectRolePage";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         path: '/',
         Component: AuthenticationLayout,
         children: [
+            {
+                path: '/select-role',
+                Component: SelectRolePage,
+            },
             {
                 path: '/signin',
                 Component: SigninPage,
