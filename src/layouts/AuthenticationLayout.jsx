@@ -20,7 +20,7 @@ export default function AuthenticationLayout() {
                             alt="Sign in"
                             className="max-w- h-full object-cover"
                         />
-                    </div>c
+                    </div>
                 </div>
             </section>
         </main>

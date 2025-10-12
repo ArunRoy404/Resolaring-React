@@ -3,6 +3,7 @@ import MainLayout from "@/layouts/MainLayout";
 import HomePage from "@/pages/Home/HomePage";
 import AuthenticationLayout from "@/layouts/AuthenticationLayout";
 import SigninPage from "@/pages/Authentication/SigninPage";
+import RegistrationPage from "@/pages/Authentication/RegistrationPage";
 
 const router = createBrowserRouter([
     {
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
         Component: AuthenticationLayout,
         children: [
             {
-                path: 'signin',
+                path: '/signin',
                 Component: SigninPage,
+            },
+            {
+                path: '/signup',
+                Component: RegistrationPage,
             }
         ]
     }
