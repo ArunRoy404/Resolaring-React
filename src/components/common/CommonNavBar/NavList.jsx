@@ -3,7 +3,7 @@ import { NavLink } from 'react-router';
 
 const NavList = ({navLinks}) => {
     return (
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-6">
             {navLinks?.map((link) => (
                 <NavLink
                     key={link?.name}
