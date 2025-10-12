@@ -32,9 +32,6 @@ const CommonInput = ({ id, type, label, errors, register, placeholder, rules }) 
                     {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                 </button>
             )}
-            {errors?.[id] && (
-                <p className="text-sm text-red-500 mt-1">{errors[id].message}</p>
-            )}
         </div>
     );
 };
