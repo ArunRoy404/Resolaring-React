@@ -6,18 +6,35 @@ import FormHeading from "@/components/common/CommonForm/FormHeading";
 import { useNavigate } from "react-router";
 
 
+
 const formFields = [
     {
-        id: "code",
-        type: "number",
-        label: "COde",
-        placeholder: "12345678",
-        rules: { required: "Code is required" },
+        id: "password",
+        type: "password",
+        label: "New Password",
+        placeholder: "••••••••",
+        rules: {
+            required: "Password is required",
+            minLength: {
+                value: 6,
+                message: "Password must be at least 6 characters",
+            },
+        },
+    },
+    {
+        id: "confirmPassword",
+        type: "password",
+        label: "Confirm Password",
+        placeholder: "••••••••",
+        rules: {
+            required: "Please confirm your password",
+            validate: (value, formValues) =>
+                value === formValues.password || "Passwords do not match",
+        },
     },
 ];
 
-
-export default function VerifyCodePage() {
+export default function SetPasswordPage() {
     const navigate = useNavigate()
     const {
         register,
@@ -33,13 +50,13 @@ export default function VerifyCodePage() {
             .join("\n");
 
         toast.success(formattedData);
-        navigate('/set-password')
+        navigate('/')
     };
 
     return (
         <div className=" w-full mx-auto space-y-8">
             <FormHeading
-                title={'We will send verification code on your email ID'}
+                title={'Set New Password'}
             />
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -59,7 +76,7 @@ export default function VerifyCodePage() {
 
                 {/* Sign in Button */}
                 <Button type="submit" className="w-full py-5">
-                    Verify
+                    Reset Password
                 </Button>
             </form>
         </div>

@@ -6,6 +6,7 @@ import SigninPage from "@/pages/Authentication/SigninPage";
 import RegistrationPage from "@/pages/Authentication/RegistrationPage";
 import VerifyEmailPage from "@/pages/Authentication/VerifyEmailPage";
 import VerifyCodePage from "@/pages/Authentication/VerifyCodePage";
+import SetPasswordPage from "@/pages/Authentication/SetPasswordPage";
 
 const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path: '/verify-otp',
                 Component: VerifyCodePage,
+            },
+            {
+                path: '/set-password',
+                Component: SetPasswordPage,
             },
         ]
     }
