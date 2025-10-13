@@ -12,7 +12,7 @@ const NavButtons = ({ variant }) => {
                         Become a Seller <ArrowRight className="h-4 w-4" />
                     </Button>
                 </Link>
-                <Link to={'/select-role'} className='w-full'>
+                <Link to={'/auth/select-role'} className='w-full'>
                     <Button variant={"outline"} className="flex items-center w-full gap-1">
                         <UserCircle className="h-5 w-5" />
                         Login
@@ -33,7 +33,7 @@ const NavButtons = ({ variant }) => {
                     Become a Seller <ArrowRight className="h-4 w-4" />
                 </Button>
             </Link>
-            <Link to={'/select-role'}>
+            <Link to={'/auth/select-role'}>
                 <Button variant="outline">
                     <UserCircle className="h-5 w-5" />
                     Login

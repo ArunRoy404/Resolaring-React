@@ -21,31 +21,31 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: '/',
+        path: '/auth',
         Component: AuthenticationLayout,
         children: [
             {
-                path: '/select-role',
+                path: 'select-role',
                 Component: SelectRolePage,
             },
             {
-                path: '/signin',
+                path: 'signin',
                 Component: SigninPage,
             },
             {
-                path: '/signup',
+                path: 'signup',
                 Component: RegistrationPage,
             },
             {
-                path: '/verify-email',
+                path: 'verify-email',
                 Component: VerifyEmailPage,
             },
             {
-                path: '/verify-otp',
+                path: 'verify-otp',
                 Component: VerifyCodePage,
             },
             {
-                path: '/set-password',
+                path: 'set-password',
                 Component: SetPasswordPage,
             },
         ]
