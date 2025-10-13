@@ -3,6 +3,7 @@ import EquipmentsSection from '@/components/HomeComponents/EquipmentsSection';
 import StatsSection from '@/components/HomeComponents/StatsSection';
 import FeaturesSection from '@/components/HomeComponents/FeaturesSection';
 import ProcedureSection from '@/components/HomeComponents/ProcedureSection';
+import MembersSection from '@/components/HomeComponents/MembersSection';
 
 const HomePage = () => {
     return (
@@ -12,6 +13,7 @@ const HomePage = () => {
             <EquipmentsSection />
             <FeaturesSection />
             <ProcedureSection />
+            <MembersSection/>
         </>
     );
 };
