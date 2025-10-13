@@ -1,9 +1,19 @@
-import Shape from '@/assets/Images/vector/cardVector.svg'
+import vector from '@/assets/Images/vector/vector.svg'
+import vector1 from '@/assets/Images/vector/vector1.svg'
+import vector2 from '@/assets/Images/vector/vector2.svg'
+import vector3 from '@/assets/Images/vector/vector3.svg'
+
+const vectors = {
+    '#B45C3D0F': vector,
+    '#F2C00614': vector1,
+    '#2FA75F0F': vector2,
+    '#FAEDFF': vector3,
+}
 
 const FeatureCard = ({ feature }) => {
     return (
         <div
-            className='p-6 rounded-2xl'
+            className='p-6 rounded-2xl relative overflow-hidden'
             style={{ backgroundColor: feature.color }}
         >
             {/* icon  */}
@@ -20,6 +30,14 @@ const FeatureCard = ({ feature }) => {
             <p className='text-[#6A7283] text-base'>
                 {feature?.description}
             </p>
+
+            <div 
+            className='absolute -top-4 -left-30'
+            >
+                <img
+                    src={vectors[feature?.color] || vector}
+                    alt="" />
+            </div>
         </div>
     );
 };

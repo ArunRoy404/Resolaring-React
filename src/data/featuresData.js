@@ -26,7 +26,7 @@ const features = [
         icon: warranty,
         label: 'Installation and maintenance',
         description: 'Our installation and maintenance team guarantees optimal installation of the recycled panels and maintenance of the system in operation.',
-        color: '#F7E3FF'
+        color: '#FAEDFF'
     },
 ]
 
