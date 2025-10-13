@@ -1,10 +1,10 @@
-import React from 'react';
+import BannerSection from '@/components/HomeComponents/BannerSection';
 
 const HomePage = () => {
     return (
-        <div>
-            homepage
-        </div>
+        <>
+            <BannerSection />
+        </>
     );
 };
 
