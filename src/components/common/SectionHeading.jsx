@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+import { cn } from "@/lib/utils";
 
-const SectionHeading = ({ children }) => {
-    return (
-        <h2 className="text-5xl font-semibold text-center text-primary mb-16">
-            {children}
-        </h2>
-    );
+const SectionHeading = ({ children, className }) => {
+  return (
+    <h2
+      className={cn(
+        "text-5xl font-semibold text-center text-primary mb-12",
+        className
+      )}
+    >
+      {children}
+    </h2>
+  );
 };
 
 export default SectionHeading;
