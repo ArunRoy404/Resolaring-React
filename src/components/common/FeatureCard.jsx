@@ -15,10 +15,11 @@ const FeatureCard = ({ feature, index }) => {
         <div
             data-aos="fade-up"
             data-aos-delay={index * 200}
+            className='overflow relative overflow-hidden rounded-2xl '
+            style={{ backgroundColor: feature?.color, }}
         >
             <div
-                className='h-full p-6 rounded-2xl relative overflow-hidden hover:shadow-xl'
-                style={{ backgroundColor: feature.color,}}
+                className='h-full p-6 relative overflow-hidden hover:shadow-xl'
             >
                 {/* icon  */}
                 <div>
@@ -34,15 +35,17 @@ const FeatureCard = ({ feature, index }) => {
                 <p className='text-[#6A7283] text-base'>
                     {feature?.description}
                 </p>
-
-                <div
-                    className='absolute -top-4 -left-30'
-                >
-                    <img
-                        src={vectors[feature?.color] || vector}
-                        alt="" />
-                </div>
             </div>
+            <div
+                className='absolute -top-20 -right-30 -z-1'
+            >
+                <img
+                    src={vectors[feature?.color] || vector}
+                    alt=""
+                    className='scale-x-[-1]'
+                />
+            </div>
+
         </div>
     );
 };
