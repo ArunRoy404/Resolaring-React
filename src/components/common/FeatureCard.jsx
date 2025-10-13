@@ -10,9 +10,11 @@ const vectors = {
     '#FAEDFF': vector3,
 }
 
-const FeatureCard = ({ feature }) => {
+const FeatureCard = ({ feature, index }) => {
     return (
         <div
+            data-aos="fade-up"
+            data-aos-delay={index * 200}
             className='p-6 rounded-2xl relative overflow-hidden'
             style={{ backgroundColor: feature.color }}
         >
@@ -31,8 +33,8 @@ const FeatureCard = ({ feature }) => {
                 {feature?.description}
             </p>
 
-            <div 
-            className='absolute -top-4 -left-30'
+            <div
+                className='absolute -top-4 -left-30'
             >
                 <img
                     src={vectors[feature?.color] || vector}

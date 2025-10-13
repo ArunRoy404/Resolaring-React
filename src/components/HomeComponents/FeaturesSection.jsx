@@ -14,8 +14,8 @@ const FeaturesSection = () => {
 
             {/* features grid  */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {features.map((item) => (
-                    <FeatureCard key={item.label} feature={item}/>
+                {features.map((item, index) => (
+                    <FeatureCard key={item.label} index={index} feature={item}/>
                 ))}
             </div>
         </CommonSection>
