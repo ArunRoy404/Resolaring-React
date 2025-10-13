@@ -4,6 +4,7 @@ import StatsSection from '@/components/HomeComponents/StatsSection';
 import FeaturesSection from '@/components/HomeComponents/FeaturesSection';
 import ProcedureSection from '@/components/HomeComponents/ProcedureSection';
 import MembersSection from '@/components/HomeComponents/MembersSection';
+import BenefitsSection from '@/components/HomeComponents/BenefitsSection';
 
 const HomePage = () => {
     return (
@@ -14,6 +15,7 @@ const HomePage = () => {
             <FeaturesSection />
             <ProcedureSection />
             <MembersSection/>
+            <BenefitsSection/>
         </>
     );
 };
