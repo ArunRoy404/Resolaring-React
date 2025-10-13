@@ -70,7 +70,7 @@ export default function RegistrationPage() {
             .join("\n");
 
         toast.success(formattedData);
-        navigate('/signin')
+        navigate('/auth/signin')
 
 
     };

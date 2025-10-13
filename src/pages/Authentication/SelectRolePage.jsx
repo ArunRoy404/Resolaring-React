@@ -15,7 +15,7 @@ export default function SelectRolePage() {
         // toast.success("Signin was successful")
 
         toast.success("Role choosed")
-        navigate('/signup')
+        navigate('/auth/signup')
     };
 
     return (

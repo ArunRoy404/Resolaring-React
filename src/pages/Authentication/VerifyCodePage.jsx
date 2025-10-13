@@ -33,7 +33,7 @@ export default function VerifyCodePage() {
             .join("\n");
 
         toast.success(formattedData);
-        navigate('/set-password')
+        navigate('/auth/set-password')
     };
 
     return (

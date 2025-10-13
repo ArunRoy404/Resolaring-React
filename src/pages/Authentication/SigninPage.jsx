@@ -53,7 +53,7 @@ export default function SigninPage() {
             .join("\n");
 
         toast.success(formattedData);
-        navigate('/verify-email')
+        navigate('/auth/verify-email')
     };
 
     return (

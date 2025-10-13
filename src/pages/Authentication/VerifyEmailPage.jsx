@@ -33,7 +33,7 @@ export default function VerifyEmailPage() {
             .join("\n");
         toast.success(formattedData);
 
-        navigate('/verify-otp')
+        navigate('/auth/verify-otp')
     };
 
     return (
