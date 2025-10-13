@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 const StatCard = ({ stat, index }) => {
     return (
         <div data-aos="fade-up" data-aos-delay={index * 200} >
-            <div className={`space-y-2 px-4 flex items-center justify-center ${index % 2 !== 0 ? "border-l border-r" : ''}`}>
+            <div className={`space-y-2 px-4 flex items-center justify-center ${index % 2 !== 0 ? "lg:border-l border-b py-4 lg:py-0 border-t lg:border-b-0 lg:border-t-0 lg:border-r" : ''}`}>
                 <div className="max-w-[380px] space-y-4">
                     <h3 className="text-5xl font-bold text-brand-primary">
                         <CountUp end={stat.number} duration={2.75} enableScrollSpy /> {stat.label}

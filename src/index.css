@@ -9,6 +9,10 @@ body {
   font-style: normal;
 }
 
+* {
+  transition: all 0.3s ease-in-out;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
