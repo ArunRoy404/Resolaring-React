@@ -22,7 +22,7 @@ const NavBar = () => {
 
                 {/* Mobile Menu */}
                 <div
-                    className="lg:hidden p-2 rounded-md hover:bg-accent"
+                    className="xl:hidden p-2 rounded-md hover:bg-accent"
                 >
                     <NavMobileMenu side='left' navLinks={navLinks} />
                 </div>

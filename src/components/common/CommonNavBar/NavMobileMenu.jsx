@@ -8,7 +8,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { Menu, X } from "lucide-react"
-import { Link } from "react-router"
+import { Link, NavLink } from "react-router"
 import NavButtons from "./NavButtons"
 
 export default function NavMobileMenu({ navLinks, side='top' }) {
@@ -23,15 +23,15 @@ export default function NavMobileMenu({ navLinks, side='top' }) {
                 </SheetHeader>
 
                 {/* nav links  */}
-                <nav className="flex flex-col gap-2 px-4 py-3">
+                <nav className="flex flex-col gap-3 px-4 py-3">
                     {navLinks.map((link) => (
-                        <Link
+                        <NavLink
                             key={link.name}
                             to={link.href}
                             className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                         >
                             {link.name}
-                        </Link>
+                        </NavLink>
                     ))}
                 </nav>
 
