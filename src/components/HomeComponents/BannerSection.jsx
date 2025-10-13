@@ -31,6 +31,7 @@ const BannerSection = () => {
                         {/* buttons  */}
                         <div className="flex gap-4">
                             <Button
+                            className={'hover:bg-secondary'}
                             >
                                 Browse Marketplace
                                 <ArrowRight className="h-4 w-4" />
