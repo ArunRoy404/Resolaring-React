@@ -6,6 +6,7 @@ import ProcedureSection from '@/components/HomeComponents/ProcedureSection';
 import MembersSection from '@/components/HomeComponents/MembersSection';
 import BenefitsSection from '@/components/HomeComponents/BenefitsSection';
 import TestimonialSection from '@/components/HomeComponents/TestimonialSection';
+import CTASection from '@/components/HomeComponents/CTASection';
 
 const HomePage = () => {
     return (
@@ -18,6 +19,7 @@ const HomePage = () => {
             <MembersSection/>
             <BenefitsSection/>
             <TestimonialSection/>
+            <CTASection/>
         </>
     );
 };
