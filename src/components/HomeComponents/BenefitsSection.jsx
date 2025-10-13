@@ -7,7 +7,9 @@ import BenefitsCard from '../common/BenefitsCard';
 
 const BenefitsSection = () => {
     return (
-        <CommonSection>
+        <CommonSection
+            className={'bg-background-secondary'}
+        >
             <SectionHeading>
                 Benefits of Joining the Solar Revolution
             </SectionHeading>
