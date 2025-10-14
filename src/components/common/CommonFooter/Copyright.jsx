@@ -1,4 +1,4 @@
-import logoWhite from "@/assets/images/Logo/LogoWhite.svg"
+import logoWhite from "@/assets/Images/Logo/LogoWhite.svg"
 
 const Copyright = () => {
     return (
