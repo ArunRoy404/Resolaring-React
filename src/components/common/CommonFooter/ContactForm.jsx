@@ -44,7 +44,7 @@ const ContactForm = () => {
                                     id='name'
                                     type='text'
                                     placeHolder='Name here'
-                                    className={`bg-white/10 text-white border-white/20 ${errors?.name ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
+                                    className={`bg-white/10 rounded-md text-white border-white/20 ${errors?.name ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
                                     {...register('name', { required: "This field is required" })}
                                 />
                             </div>
@@ -54,7 +54,7 @@ const ContactForm = () => {
                                     id='cognoms'
                                     type='text'
                                     placeHolder='Cognoms here'
-                                    className={`bg-white/10 text-white border-white/20 ${errors?.cognoms ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
+                                    className={`bg-white/10 rounded-md text-white border-white/20 ${errors?.cognoms ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
                                     {...register('cognoms', { required: "This field is required" })}
                                 />
                             </div>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                                     id='telephone'
                                     type='text'
                                     placeHolder='Telephone here'
-                                    className={`bg-white/10 text-white border-white/20 ${errors?.telephone ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
+                                    className={`bg-white/10 rounded-md text-white border-white/20 ${errors?.telephone ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
                                     {...register('telephone', { required: "This field is required" })}
                                 />
 
@@ -79,7 +79,7 @@ const ContactForm = () => {
                                     id='email'
                                     type='email'
                                     placeHolder='Email here'
-                                    className={`bg-white/10 text-white border-white/20 ${errors?.email ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
+                                    className={`bg-white/10 rounded-md text-white border-white/20 ${errors?.email ? 'border-red-400 focus-visible:ring-red-400' : ''}`}
                                     {...register('email', { required: "This field is required" })}
                                 />
                             </div>
