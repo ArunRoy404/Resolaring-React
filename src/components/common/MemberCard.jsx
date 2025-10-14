@@ -1,7 +1,6 @@
 import React from 'react';
 
 const MemberCard = ({ member, index }) => {
-    console.log(index);
     return (
         <div
             data-aos="fade-up"

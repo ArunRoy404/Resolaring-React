@@ -1,8 +1,6 @@
 import React from 'react';
 import HelpLogo from '../common/CommonTopBar/HelpLogo';
 import SearchBar from '../common/CommonTopBar/SearchBar';
-import { Button } from '../ui/button';
-import { Globe } from 'lucide-react';
 import CartButton from '../common/CommonTopBar/CartButton';
 import ToggleLanguage from '../common/ToggleLanguage';
 

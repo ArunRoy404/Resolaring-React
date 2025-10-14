@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const FooterLinks = ({links}) => {
     return (
         <div>
-            <p className='text-white  font-semibold text-lg mb-5'>Quick Link</p>
+            <p className='text-white w-[200px]  font-semibold text-lg mb-5'>Quick Link</p>
             <ul className='space-y-3'>
                 {
                     links.map((link, index) => (
