@@ -16,7 +16,15 @@ const filterOptions = {
             'SMA Products',
             'Sunpower Products',
         ]
-    }
+    },
+    sortBy: [
+        'Recommended',
+        'Newest',
+        'Price (low to high)',
+        'Price (high to low)',
+        'Name A-Z',
+        'Name Z-A',
+    ]
 }
 
 
