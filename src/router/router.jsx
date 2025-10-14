@@ -10,6 +10,7 @@ import SetPasswordPage from "@/pages/Authentication/SetPasswordPage";
 import SelectRolePage from "@/pages/Authentication/SelectRolePage";
 import AboutPage from "@/pages/main/AboutPage";
 import RecyclingPage from "@/pages/main/RecyclingPage";
+import MarketplacePage from "@/pages/main/MarketplacePage";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path:'/recycle',
                 Component: RecyclingPage
+            },
+            {
+                path:'/marketplace',
+                Component: MarketplacePage
             },
         ]
     },
