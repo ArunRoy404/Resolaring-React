@@ -6,6 +6,8 @@ import recycleImage from '@/assets/Images/recycleImage.svg'
 import RecyclePanelSection from "@/components/common/RecyclePageComponents/RecyclePanelSection";
 import MembersSection from "@/components/common/CommonSections/MembersSection";
 import NewsletterSection from "@/components/common/MarketplaceComponents/NewsletterSection";
+import ProductsViewSection from "@/components/common/MarketplaceComponents/ProductsViewSection";
+import SearchBar from "@/components/common/CommonTopBar/SearchBar";
 
 const MarketplacePage = () => {
     return (
@@ -20,7 +22,8 @@ const MarketplacePage = () => {
                 }}
             />
 
-            <NewsletterSection/>
+            <ProductsViewSection />
+            <NewsletterSection />
         </>
     );
 };

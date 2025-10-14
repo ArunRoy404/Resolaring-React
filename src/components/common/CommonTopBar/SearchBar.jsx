@@ -4,14 +4,20 @@ import {
     InputGroupAddon,
     InputGroupInput,
 } from "@/components/ui/input-group"
+import { cn } from '@/lib/utils';
 import { Search } from 'lucide-react';
 
 
 
-const SearchBar = () => {
+const SearchBar = ({ className }) => {
     return (
         <div>
-            <InputGroup className={'w-[500px] bg-white rounded-full py-6'}>
+            <InputGroup className={
+                cn(
+                    'w-[500px] bg-white rounded-full py-6',
+                    className
+                )
+            }>
                 <InputGroupInput placeholder="Search for product" />
                 <InputGroupAddon align="inline-end">
                     <Button variant={'icon'} className={'text-black absolute right-6'}>
