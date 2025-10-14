@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "@/layouts/MainLayout";
-import HomePage from "@/pages/Home/HomePage";
+import HomePage from "@/pages/main/HomePage";
 import AuthenticationLayout from "@/layouts/AuthenticationLayout";
 import SigninPage from "@/pages/Authentication/SigninPage";
 import RegistrationPage from "@/pages/Authentication/RegistrationPage";
@@ -8,6 +8,7 @@ import VerifyEmailPage from "@/pages/Authentication/VerifyEmailPage";
 import VerifyCodePage from "@/pages/Authentication/VerifyCodePage";
 import SetPasswordPage from "@/pages/Authentication/SetPasswordPage";
 import SelectRolePage from "@/pages/Authentication/SelectRolePage";
+import AboutPage from "@/pages/main/AboutPage";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 Component: HomePage
+            },
+            {
+                path:'/about',
+                Component: AboutPage
             }
         ]
     },

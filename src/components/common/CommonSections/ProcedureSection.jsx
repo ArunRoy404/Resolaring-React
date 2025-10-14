@@ -1,11 +1,11 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
+import CommonSection from '../CommonSection'
 import image from '@/assets/Images/procedureImage.svg'
-import SectionHeading from '../common/SectionHeading';
-import { Button } from '../ui/button';
+import SectionHeading from '../SectionHeading';
 import { ArrowRight } from 'lucide-react';
 import { procedures } from '@/data/procedureData';
-import ProcedureCard from '../common/ProcedureCard';
+import ProcedureCard from '../ProcedureCard';
+import { Button } from '@/components/ui/button';
 
 const ProcedureSection = () => {
     return (
