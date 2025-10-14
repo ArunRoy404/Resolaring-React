@@ -6,6 +6,7 @@ import ProcedureSection from "@/components/common/CommonSections/ProcedureSectio
 import TestimonialSection from "@/components/common/CommonSections/TestimonialSection";
 import recycleImage from '@/assets/Images/recycleImage.svg'
 import RecyclePanelSection from "@/components/common/RecyclePageComponents/RecyclePanelSection";
+import MembersSection from "@/components/common/CommonSections/MembersSection";
 
 const RecyclingPage = () => {
     return (
@@ -21,10 +22,9 @@ const RecyclingPage = () => {
             />
 
             <RecyclePanelSection/>
-            <FeaturesSection />
-            <ProcedureSection />
-            <BenefitsSection />
+            <MembersSection/>
             <TestimonialSection />
+            <BenefitsSection />
             <CTASection />
         </>
     );

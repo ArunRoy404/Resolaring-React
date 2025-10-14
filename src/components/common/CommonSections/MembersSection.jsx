@@ -1,8 +1,8 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
-import SectionHeading from '../common/SectionHeading';
+import CommonSection from '../CommonSection';
+import SectionHeading from '../SectionHeading';
 import { members } from '@/data/membersData';
-import MemberCard from '../common/MemberCard';
+import MemberCard from '../MemberCard';
 
 const MembersSection = () => {
     return (
