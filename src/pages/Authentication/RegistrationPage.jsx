@@ -121,7 +121,7 @@ export default function RegistrationPage() {
             {/* Footer */}
             <p className="text-center text-base text-primary font-medium">
                 Already have an account?{" "}
-                <Link to="/signin" className="hover:underline text-[#B45C3D]">
+                <Link to="/auth/signin" className="hover:underline text-[#B45C3D]">
                     Sign in
                 </Link>
             </p>

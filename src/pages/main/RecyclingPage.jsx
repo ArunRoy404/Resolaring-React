@@ -5,6 +5,7 @@ import FeaturesSection from "@/components/common/CommonSections/FeaturesSection"
 import ProcedureSection from "@/components/common/CommonSections/ProcedureSection";
 import TestimonialSection from "@/components/common/CommonSections/TestimonialSection";
 import recycleImage from '@/assets/Images/recycleImage.svg'
+import RecyclePanelSection from "@/components/common/RecyclePageComponents/RecyclePanelSection";
 
 const RecyclingPage = () => {
     return (
@@ -18,6 +19,8 @@ const RecyclingPage = () => {
                     path: '/marketplace'
                 }}
             />
+
+            <RecyclePanelSection/>
             <FeaturesSection />
             <ProcedureSection />
             <BenefitsSection />
