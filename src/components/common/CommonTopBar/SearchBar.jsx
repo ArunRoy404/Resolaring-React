@@ -18,7 +18,7 @@ const SearchBar = ({ className }) => {
                     className
                 )
             }>
-                <InputGroupInput placeholder="Search for product" />
+                <InputGroupInput placeHolder="Search for product" />
                 <InputGroupAddon align="inline-end">
                     <Button variant={'icon'} className={'text-black absolute right-6'}>
                         <Search />
