@@ -4,6 +4,8 @@ import { footerData } from '@/data/footerData';
 import FooterLinks from '../common/CommonFooter/FooterLinks';
 import FooterAbout from '../common/CommonFooter/FooterAbout';
 import ContactForm from '../common/CommonFooter/ContactForm';
+import Copyright from '../common/CommonFooter/Copyright';
+
 
 const Footer = () => {
     return (
@@ -24,9 +26,12 @@ const Footer = () => {
 
 
                     {/* COntact Form  */}
-                    <ContactForm/>
-
+                    <ContactForm />
                 </div>
+
+
+                {/* copyright  */}
+                <Copyright />
             </CommonSection>
         </footer>
     );
