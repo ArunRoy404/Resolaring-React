@@ -1,8 +1,8 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
-import SectionHeading from '../common/SectionHeading';
+import CommonSection from '../CommonSection';
+import SectionHeading from '../SectionHeading';
 import { features } from '@/data/featuresData';
-import FeatureCard from '../common/FeatureCard';
+import FeatureCard from '../FeatureCard';
 
 const FeaturesSection = () => {
     return (

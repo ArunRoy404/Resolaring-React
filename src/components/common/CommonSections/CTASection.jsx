@@ -1,7 +1,7 @@
 import React from 'react';
-import CommonSection from '../common/CommonSection';
+import CommonSection from '../CommonSection';
 import CTAImage from "@/assets/Images/CTAImage.svg"
-import { Button } from '../ui/button';
+import { Button } from '../../ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const CTASection = () => {

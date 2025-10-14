@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import CommonSection from '../common/CommonSection';
-import SectionHeading from '../common/SectionHeading';
+import CommonSection from '../CommonSection';
+import SectionHeading from '../SectionHeading';
 import solarImage from "@/assets/Images/solarImage.svg"
-import { TestimonialCarousal } from '../common/TestimonialCarousal';
+import { TestimonialCarousal } from '../TestimonialCarousal';
 import { CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { Button } from '../ui/button';
+import { Button } from '../../ui/button';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const TestimonialSection = () => {
