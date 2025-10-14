@@ -13,7 +13,7 @@ const NavButtons = ({ variant }) => {
                     </Button>
                 </Link>
                 <Link to={'/auth/select-role'} className='w-full'>
-                    <Button variant={"outline"} className="flex items-center w-full gap-1">
+                    <Button variant={"outline"} className="bg-transparent flex items-center w-full gap-1">
                         <UserCircle className="h-5 w-5" />
                         Login
                     </Button>
@@ -34,7 +34,7 @@ const NavButtons = ({ variant }) => {
                 </Button>
             </Link>
             <Link to={'/auth/select-role'}>
-                <Button variant="outline">
+                <Button variant="outline" className={'bg-transparent'}>
                     <UserCircle className="h-5 w-5" />
                     Login
                 </Button>
