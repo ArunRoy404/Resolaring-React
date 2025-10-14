@@ -1,5 +1,10 @@
 import BreadCrumbs from '@/components/common/BreadCrumbs';
 import CommonSection from '@/components/common/CommonSection';
+import FacebookSvg from '@/components/common/svg/FacebookSvg';
+import LinkedinSvg from '@/components/common/svg/LinkedinSvg';
+import PinterestSvg from '@/components/common/svg/PinterestSvg';
+import WhatsappSvg from '@/components/common/svg/WhatsappSvg';
+import XSvg from '@/components/common/svg/XSvg';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -93,7 +98,13 @@ const EquipmentDetails = () => {
                         <ArrowRight />
                     </Button>
 
-
+                    <div className='mt-8 flex items-center gap-3'>
+                        <FacebookSvg />
+                        <PinterestSvg />
+                        <WhatsappSvg />
+                        <LinkedinSvg />
+                        <XSvg />
+                    </div>
                 </div>
             </div>
 
