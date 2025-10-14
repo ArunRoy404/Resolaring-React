@@ -2,6 +2,7 @@ import CommonSection from '../CommonSection';
 import { Link } from 'react-router';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import BreadCrumbs from '../BreadCrumbs';
 
 
 const CommonBannerSection = ({ image, title, subtitle, button }) => {
@@ -24,9 +25,7 @@ const CommonBannerSection = ({ image, title, subtitle, button }) => {
             {/* content  */}
             <div className='relative z-[100] max-w-[800px]'>
                 {/* breadcrumb */}
-                <p className='text-white text-lg font-medium'>
-                    {'Home > Why Resolaring?'}
-                </p>
+                <BreadCrumbs />
 
                 {/* title  */}
                 <h1 className='text-white font-bold text-6xl mt-4 mb-3'>
