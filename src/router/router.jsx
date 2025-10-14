@@ -12,6 +12,7 @@ import AboutPage from "@/pages/main/AboutPage";
 import RecyclingPage from "@/pages/main/RecyclingPage";
 import MarketplacePage from "@/pages/main/MarketplacePage";
 import GalleryPage from "@/pages/main/GalleryPage";
+import EquipmentDetails from "@/pages/main/EquipmentDetails";
 
 const router = createBrowserRouter([
     {
@@ -23,20 +24,25 @@ const router = createBrowserRouter([
                 Component: HomePage
             },
             {
-                path:'/about',
+                path: '/about',
                 Component: AboutPage
             },
             {
-                path:'/recycle',
+                path: '/recycle',
                 Component: RecyclingPage
             },
             {
-                path:'/marketplace',
+                path: '/marketplace',
                 Component: MarketplacePage
             },
             {
-                path:'/gallery',
+                path: '/gallery',
                 Component: GalleryPage
+            },
+            {
+                path: '/equipments/:id',
+                Component: EquipmentDetails,
+                loader: () => fetch('/public/equipments.json')
             },
         ]
     },

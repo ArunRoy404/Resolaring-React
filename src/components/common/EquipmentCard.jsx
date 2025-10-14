@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { ArrowRight, Bookmark, Star } from "lucide-react";
+import { Link } from "react-router";
 
 const EquipmentCard = ({ equipment }) => {
     return (
@@ -54,17 +55,21 @@ const EquipmentCard = ({ equipment }) => {
                         <span className="text-[#6A7283] text-xs">Tax excluded</span>
                         <span className="text-primary text-2xl font-semibold">{equipment.price} €</span>
                     </div>
-                    <Button
-                        variant="outline"
-                        className="group flex items-center justify-center gap-2 relative overflow-hidden"
+                    <Link 
+                    to={`/equipments/${equipment?.id}`}
                     >
-                        <span className="transition-all duration-300 group-hover:mr-4">
-                            View Details
-                        </span>
-                        <ArrowRight
-                            className="absolute right-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
-                        />
-                    </Button>
+                        <Button
+                            variant="outline"
+                            className="group flex items-center justify-center gap-2 relative overflow-hidden"
+                        >
+                            <span className="transition-all duration-300 group-hover:mr-4">
+                                View Details
+                            </span>
+                            <ArrowRight
+                                className="absolute right-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
+                            />
+                        </Button>
+                        </Link>
                 </div>
             </div>
         </div>
