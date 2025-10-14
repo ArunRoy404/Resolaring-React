@@ -1,13 +1,15 @@
 import CommonBannerSection from "@/components/common/CommonSections/CommonBannerSection";
-import recycleImage from '@/assets/Images/recycleImage.svg'
+import galleryBannerImage from '@/assets/Images/galleryBannerImage.svg'
 import NewsletterSection from "@/components/common/MarketplaceComponents/NewsletterSection";
 import ProductsViewSection from "@/components/common/MarketplaceComponents/ProductsViewSection";
+import EquipmentsSection from "@/components/HomeComponents/EquipmentsSection";
+import CTASection from "@/components/common/CommonSections/CTASection";
 
-const MarketplacePage = () => {
+const GalleryPage = () => {
     return (
         <>
             <CommonBannerSection
-                image={recycleImage}
+                image={galleryBannerImage}
                 title={'The process of recycling photovoltaic panels'}
                 subtitle={"Exploring Sustainable Methods to Maximize Material Recovery and Minimize Waste in Photovoltaic Panel Recycling."}
                 button={{
@@ -16,9 +18,10 @@ const MarketplacePage = () => {
                 }}
             />
 
-            <ProductsViewSection />
-            <NewsletterSection />
+            <EquipmentsSection />
+            <CTASection />
         </>
     );
 };
-export default MarketplacePage;
+
+export default GalleryPage;

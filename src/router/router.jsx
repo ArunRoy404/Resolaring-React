@@ -11,6 +11,7 @@ import SelectRolePage from "@/pages/Authentication/SelectRolePage";
 import AboutPage from "@/pages/main/AboutPage";
 import RecyclingPage from "@/pages/main/RecyclingPage";
 import MarketplacePage from "@/pages/main/MarketplacePage";
+import GalleryPage from "@/pages/main/GalleryPage";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path:'/marketplace',
                 Component: MarketplacePage
+            },
+            {
+                path:'/gallery',
+                Component: GalleryPage
             },
         ]
     },
