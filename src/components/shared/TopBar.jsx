@@ -13,7 +13,7 @@ const TopBar = () => {
                     <SearchBar />
                 </div>
 
-                <div className='flex items-center gap-12'>
+                <div className='flex items-center gap-6'>
                     <ToggleLanguage/>
                     <CartButton />
                 </div>
