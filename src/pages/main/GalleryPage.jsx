@@ -1,7 +1,5 @@
 import CommonBannerSection from "@/components/common/CommonSections/CommonBannerSection";
 import galleryBannerImage from '@/assets/Images/galleryBannerImage.svg'
-import NewsletterSection from "@/components/common/MarketplaceComponents/NewsletterSection";
-import ProductsViewSection from "@/components/common/MarketplaceComponents/ProductsViewSection";
 import EquipmentsSection from "@/components/HomeComponents/EquipmentsSection";
 import CTASection from "@/components/common/CommonSections/CTASection";
 
@@ -10,8 +8,8 @@ const GalleryPage = () => {
         <>
             <CommonBannerSection
                 image={galleryBannerImage}
-                title={'The process of recycling photovoltaic panels'}
-                subtitle={"Exploring Sustainable Methods to Maximize Material Recovery and Minimize Waste in Photovoltaic Panel Recycling."}
+                title={'Publica els teus panells'}
+                subtitle={"Aquí pots publicar els teus panells. Nosaltres ens posarem en contacte"}
                 button={{
                     label: 'Sell Your Equipment',
                     path: '/marketplace'
