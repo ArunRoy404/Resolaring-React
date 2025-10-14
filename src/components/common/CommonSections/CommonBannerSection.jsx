@@ -22,7 +22,7 @@ const CommonBannerSection = ({ image, title, subtitle, button }) => {
             <div className="absolute inset-0 bg-gradient-to-r from-[#071431] to-transparent"></div>
 
             {/* content  */}
-            <div className='relative z-[100]'>
+            <div className='relative z-[100] max-w-[800px]'>
                 {/* breadcrumb */}
                 <p className='text-white text-lg font-medium'>
                     {'Home > Why Resolaring?'}
