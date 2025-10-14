@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import { Outlet } from 'react-router';
 import NavBar from '../components/shared/NavBar';
 import Footer from '@/components/shared/Footer';
+import TopBar from '@/components/shared/TopBar';
 
 const MainLayout = () => {
         useEffect(() => {
@@ -16,6 +17,7 @@ const MainLayout = () => {
 
         return (
             <main>
+                <TopBar/>
                 <NavBar />
                 <Outlet />
                 <Footer/>
