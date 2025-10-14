@@ -19,8 +19,8 @@ const EquipmentDetails = () => {
 
 
     useEffect(() => {
-        const data = allData.filter(item => {
-            return item.id == id
+        const data = allData?.filter(item => {
+            return item?.id == id
         })
         setEquipment(data[0])
     }, [id, allData])
