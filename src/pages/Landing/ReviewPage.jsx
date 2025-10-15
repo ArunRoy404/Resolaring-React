@@ -3,13 +3,13 @@ import CTASection from "@/components/common/CommonSections/CTASection";
 import marketplaceImage from '@/assets/Images/marketplaceImage.svg'
 import { useLoaderData, useParams } from "react-router";
 import { useEffect, useState } from "react";
+import EquipmentReviewSection from "@/components/common/GalleryReviewComponents/EquipmentReviewSection";
 
 const ReviewPage = () => {
 
     const { id } = useParams()
     const allData = useLoaderData()
     const [equipment, setEquipment] = useState({})
-
 
     useEffect(() => {
         const data = allData?.filter(item => {
@@ -33,7 +33,7 @@ const ReviewPage = () => {
                 currentPath={" "}
             />
 
-
+            <EquipmentReviewSection equipment={equipment} />
             <CTASection />
         </>
     );

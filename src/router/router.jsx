@@ -42,7 +42,7 @@ const router = createBrowserRouter([
                 loader: () => fetch('/equipments.json')
             },
             {
-                path: '/gallery/:id',
+                path: '/gallery/review/:id',
                 Component: ReviewPage,
                 loader: () => fetch('/equipments.json')
             },

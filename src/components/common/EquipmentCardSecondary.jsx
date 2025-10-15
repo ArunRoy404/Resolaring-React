@@ -19,9 +19,11 @@ const EquipmentCardSecondary = ({ equipment, setOpenDialog }) => {
 
             {/* chat and add to favorite */}
             <div className="flex items-center gap-3 absolute top-4 right-6">
-                <button className="cursor-pointer bg-white w-9 h-9 flex items-center justify-center rounded-full shadow hover:bg-secondary transition">
-                    <MessagesSquare color="gray" size={15} />
-                </button>
+                <Link to={`review/${equipment?.id}`}>
+                    <button className="cursor-pointer bg-white w-9 h-9 flex items-center justify-center rounded-full shadow hover:bg-secondary transition">
+                        <MessagesSquare color="gray" size={15} />
+                    </button>
+                </Link>
 
                 <button className="cursor-pointer bg-white w-9 h-9 flex items-center justify-center rounded-full shadow hover:bg-secondary transition">
                     <Heart color="gray" size={15} />
