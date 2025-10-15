@@ -8,7 +8,7 @@ import XSvg from '@/components/svg/XSvg';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Image } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 
@@ -37,14 +37,30 @@ const EquipmentDetails = () => {
 
                 {/* images grid  */}
                 <div className='grid grid-cols-2 gap-6'>
-                    <div className='relative w-full h-[300px] col-span-2 rounded-2xl overflow-hidden' >
+                    <div className='relative w-full group h-[300px] col-span-2 rounded-2xl overflow-hidden' >
                         <img className='w-full' src={equipment?.image} alt={equipment?.title} />
+                        <div className="absolute inset-0 group-hover:bg-black/50 transition-all duration-300 ease-in-out"></div>
+                        <Button className={'rounded opacity-0 group-hover:opacity-100 bg-white/20 absolute top-4 right-4'}>
+                            <Image /> Show all images
+                        </Button>
                     </div>
-                    <div className='relative w-full rounded-2xl overflow-hidden' >
+
+
+                    <div className='relative w-full group rounded-2xl overflow-hidden' >
                         <img className='w-full' src={equipment?.image} alt={equipment?.title} />
+                        <div className="absolute inset-0 group-hover:bg-black/50 transition-all duration-300 ease-in-out"></div>
+                        <Button className={'rounded opacity-0 group-hover:opacity-100 bg-white/20 absolute top-4 right-4'}>
+                            <Image /> Show all images
+                        </Button>
                     </div>
-                    <div className='relative w-full rounded-2xl overflow-hidden' >
+
+
+                    <div className='relative w-full group rounded-2xl overflow-hidden' >
                         <img className='w-full' src={equipment?.image} alt={equipment?.title} />
+                        <div className="absolute inset-0 group-hover:bg-black/50 transition-all duration-300 ease-in-out"></div>
+                        <Button className={'rounded opacity-0 group-hover:opacity-100 bg-white/20 absolute top-4 right-4'}>
+                            <Image /> Show all images
+                        </Button>
                     </div>
                 </div>
 
