@@ -57,7 +57,7 @@ const ProductsViewSection = () => {
                                     value={selectedOption}
                                     onValueChange={(newValue) => setSelectedOption(newValue)}
                                 >
-                                    <SelectTrigger className=" border-none text-[#6A7283] text-lg font-medium">
+                                    <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-lg font-medium">
                                         <SelectValue placeholder="Recommended" />
                                     </SelectTrigger>
                                     <SelectContent>

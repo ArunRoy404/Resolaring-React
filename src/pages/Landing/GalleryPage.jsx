@@ -1,7 +1,7 @@
 import CommonBannerSection from "@/components/common/CommonSections/CommonBannerSection";
 import galleryBannerImage from '@/assets/Images/galleryBannerImage.svg'
-import EquipmentsSection from "@/components/HomeComponents/EquipmentsSection";
 import CTASection from "@/components/common/CommonSections/CTASection";
+import GallerySection from "@/components/common/GalleryComponents/GallerySection";
 
 const GalleryPage = () => {
     return (
@@ -16,7 +16,7 @@ const GalleryPage = () => {
                 }}
             />
 
-            <EquipmentsSection />
+            <GallerySection />
             <CTASection />
         </>
     );

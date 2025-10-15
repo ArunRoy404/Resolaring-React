@@ -37,7 +37,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/gallery',
-                Component: GalleryPage
+                Component: GalleryPage,
+                loader: () => fetch('/equipments.json')
             },
             {
                 path: '/equipments/:id',
