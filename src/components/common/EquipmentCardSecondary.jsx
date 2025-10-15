@@ -7,7 +7,7 @@ import EquipmentSelect from "./GalleryComponents/EquipmentSelect";
 const EquipmentCardSecondary = ({ equipment, setOpenDialog}) => {
 
     return (
-        <div className="bg-white rounded-lg overflow-hidden relative group hover:shadow-md transition-shadow duration-300">
+        <div className="bg-white border border-[#DFE0E4] rounded-lg overflow-hidden relative group hover:shadow-md transition-shadow duration-300">
 
             {/* Image */}
             <img
