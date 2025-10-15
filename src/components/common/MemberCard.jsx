@@ -1,4 +1,7 @@
+import { Linkedin, Mail, Share2 } from 'lucide-react';
 import React from 'react';
+import { Button } from '../ui/button';
+import SkypeSvg from './svg/SkypeSvg';
 
 const MemberCard = ({ member, index }) => {
     return (
@@ -6,9 +9,29 @@ const MemberCard = ({ member, index }) => {
             data-aos="fade-up"
             data-aos-delay={index * 200}
         >
-            <div className='bg-[#F6F6FF] p-6 border-[1.5px] border-white hover:border-secondary rounded-2xl'>
-                <div>
-                    <img src={member?.image} alt="" />
+            <div className='bg-[#F6F6FF] group p-6 border-[1.5px] border-white hover:border-secondary rounded-2xl'>
+
+                <div className='relative'>
+                    {/* image  */}
+                    <img src={member?.image} className='w-full' alt="" />
+
+
+                    {/* social icons  */}
+                    <div className='bottom-4 right-4 absolute flex flex-col items-center gap-2'>
+                        <Button size={'icon'} className={'bg-brand-primary text-white absolute group-hover:-translate-y-33 transition-transform ease-in-out duration-300'}>
+                            <SkypeSvg color='white' />
+                        </Button>
+                        <Button size={'icon'} className={'bg-brand-primary text-white absolute group-hover:-translate-y-22 transition-transform ease-in-out duration-300'}>
+                            <Mail />
+                        </Button>
+                        <Button size={'icon'} className={'bg-brand-primary text-white absolute group-hover:-translate-y-11 transition-transform ease-in-out duration-300'}>
+                            <Linkedin />
+                        </Button>
+                        <Button size={'icon'} className={'relative z-10 bg-brand-primary text-white '}>
+                            <Share2 />
+                        </Button>
+                    </div>
+
                 </div>
 
                 <h1 className='mb-1 mt-4 text-primary font-semibold'>
