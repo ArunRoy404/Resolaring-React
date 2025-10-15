@@ -15,6 +15,8 @@ import GalleryPage from "@/pages/Landing/GalleryPage";
 import EquipmentDetails from "@/pages/Landing/EquipmentDetails";
 import ReviewPage from "@/pages/Landing/ReviewPage";
 import SupportPage from "@/pages/Landing/SupportPage";
+import CartLayout from "@/layouts/CartLayout";
+import CartPage from "@/pages/Cart/CartPage";
 
 const router = createBrowserRouter([
     {
@@ -86,6 +88,16 @@ const router = createBrowserRouter([
                 path: 'set-password',
                 Component: SetPasswordPage,
             },
+        ]
+    },
+    {
+        path: '/cart',
+        Component: CartLayout,
+        children: [
+            {
+                index:true,
+                Component: CartPage
+            }
         ]
     }
 ]);
