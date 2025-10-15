@@ -1,40 +1,32 @@
-import { Button } from '@/components/ui/button';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { Download, EllipsisVertical, Share, TriangleAlert } from 'lucide-react';
 import React from 'react';
 
-const EquipmentSelect = () => {
+const EquipmentSelect = ({ setOpenDialog }) => {
     return (
         <Select
             value={''}
+            onValueChange={(value)=>setOpenDialog(value)}
         >
-            <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-lg font-medium pr-0 [&>svg]:hidden">
-                <Button
-                    size={'icon'}
-                    className={'hover:bg-gray-100 bg-transparent shadow-none'}
-                >
-                    <EllipsisVertical />
-                </Button>
+            <SelectTrigger className="border-none shadow-none text-lg font-medium pr-0 [&>svg]:hidden">
+                <span><EllipsisVertical /></span>
             </SelectTrigger>
             <SelectContent className={'rounded'}>
                 <SelectGroup>
-                    <SelectItem >
-                        <Button variant={'ghost'}>
-                            <Download />
-                            Download
-                        </Button>
+                    <SelectItem value='download'>
+                        <Download />
+                        Download
                     </SelectItem>
-                    <SelectItem >
-                        <Button variant={'ghost'}>
-                            <Share />
-                            Share
-                        </Button>
+
+
+                    <SelectItem value='share'>
+                        <Share />
+                        Share
                     </SelectItem>
-                    <SelectItem >
-                        <Button variant={'ghost'}>
-                            <TriangleAlert />
-                            Report
-                        </Button>
+
+                    <SelectItem value='report'>
+                        <TriangleAlert />
+                        Report
                     </SelectItem>
                 </SelectGroup>
             </SelectContent>

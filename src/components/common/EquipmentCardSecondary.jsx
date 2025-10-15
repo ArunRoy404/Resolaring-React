@@ -4,7 +4,7 @@ import { Link } from "react-router";
 import avatar from '@/assets/Images/Avatar.svg'
 import EquipmentSelect from "./GalleryComponents/EquipmentSelect";
 
-const EquipmentCardSecondary = ({ equipment }) => {
+const EquipmentCardSecondary = ({ equipment, setOpenDialog}) => {
 
     return (
         <div className="bg-white rounded-lg overflow-hidden relative group hover:shadow-md transition-shadow duration-300">
@@ -44,7 +44,7 @@ const EquipmentCardSecondary = ({ equipment }) => {
                     </div>
 
                     {/* menu selection button  */}
-                    <EquipmentSelect />
+                    <EquipmentSelect setOpenDialog={setOpenDialog} />
                 </div>
 
                 {/* Equipment Name */}

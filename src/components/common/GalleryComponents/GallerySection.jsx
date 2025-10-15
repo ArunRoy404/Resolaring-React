@@ -6,6 +6,7 @@ import SectionHeading from "../SectionHeading";
 import { Button } from "@/components/ui/button";
 import EquipmentCardSecondary from "../EquipmentCardSecondary";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import ShareEquipment from "./ShareEquipmentDialog";
 const filterOptions = [
     'Most Recent',
     'Most Liked',
@@ -15,7 +16,7 @@ const filterOptions = [
 const GallerySection = () => {
     const equipments = useLoaderData()
     const [selectedOption, setSelectedOption] = useState(filterOptions[0])
-
+    const [openDialog, setOpenDialog] = useState(null)
 
     return (
         <CommonSection>
@@ -61,7 +62,7 @@ const GallerySection = () => {
             {/* Equipments Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {equipments.map((item) => (
-                    <EquipmentCardSecondary key={item.id} equipment={item} />
+                    <EquipmentCardSecondary setOpenDialog={setOpenDialog} key={item.id} equipment={item} />
                 ))}
             </div>
 
@@ -78,6 +79,9 @@ const GallerySection = () => {
                     </Button>
                 </Link>
             </div>
+
+            {/* dialog */}
+            <ShareEquipment openDialog={openDialog} setOpenDialog={setOpenDialog} />
         </CommonSection>
     );
 };
