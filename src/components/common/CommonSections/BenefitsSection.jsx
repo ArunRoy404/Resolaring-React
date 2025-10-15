@@ -1,7 +1,6 @@
 import React from 'react';
 import CommonSection from '../CommonSection';
 import SectionHeading from '../SectionHeading';
-import FeatureCard from '../FeatureCard';
 import { benefits } from '@/data/benefitsData';
 import BenefitsCard from '../BenefitsCard';
 

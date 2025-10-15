@@ -1,7 +1,7 @@
 import { Linkedin, Mail, Share2 } from 'lucide-react';
 import React from 'react';
 import { Button } from '../ui/button';
-import SkypeSvg from './svg/SkypeSvg';
+import SkypeSvg from '../svg/SkypeSvg';
 
 const MemberCard = ({ member, index }) => {
     return (

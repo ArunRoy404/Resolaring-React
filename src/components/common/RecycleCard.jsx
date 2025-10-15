@@ -20,6 +20,8 @@ const RecycleCard = ({ recycleInfo, index }) => {
                     </p>
                 </div>
 
+
+                {/* navigation overlay  */}
                 <div className='absolute group-hover:translate-y-0 top-0 translate-y-full h-full transition-transform ease-in-out duration-300'>
                     <RecycleCardNavigation image={recycleInfo?.image} />
                 </div>

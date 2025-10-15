@@ -3,7 +3,6 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Slider } from '@/components/ui/slider';
 import { filterOptions } from '@/data/filterOptions';
 import React, { useState } from 'react';
-import { Link } from 'react-router';
 
 const ProductsFilter = () => {
     const [sliderValue, setSliderValue] = useState(0)

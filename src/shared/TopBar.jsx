@@ -1,8 +1,8 @@
 import React from 'react';
-import HelpLogo from '../common/CommonTopBar/HelpLogo';
-import SearchBar from '../common/CommonTopBar/SearchBar';
-import CartButton from '../common/CommonTopBar/CartButton';
-import ToggleLanguage from '../common/ToggleLanguage';
+import HelpLogo from '../components/common/CommonTopBar/HelpLogo';
+import SearchBar from '../components/common/CommonTopBar/SearchBar';
+import CartButton from '../components/common/CommonTopBar/CartButton';
+import ToggleLanguage from '../components/common/ToggleLanguage';
 
 const TopBar = () => {
     return (

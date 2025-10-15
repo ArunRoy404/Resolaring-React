@@ -1,10 +1,10 @@
 import BreadCrumbs from '@/components/common/BreadCrumbs';
 import CommonSection from '@/components/common/CommonSection';
-import FacebookSvg from '@/components/common/svg/FacebookSvg';
-import LinkedinSvg from '@/components/common/svg/LinkedinSvg';
-import PinterestSvg from '@/components/common/svg/PinterestSvg';
-import WhatsappSvg from '@/components/common/svg/WhatsappSvg';
-import XSvg from '@/components/common/svg/XSvg';
+import FacebookSvg from '@/components/svg/FacebookSvg';
+import LinkedinSvg from '@/components/svg/LinkedinSvg';
+import PinterestSvg from '@/components/svg/PinterestSvg';
+import WhatsappSvg from '@/components/svg/WhatsappSvg';
+import XSvg from '@/components/svg/XSvg';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -55,11 +55,13 @@ const EquipmentDetails = () => {
                         New
                     </Badge>
 
+                    {/* title */}
                     <h1 className='text-primary font-semibold text-5xl mt-4 mb-2'>
                         {equipment?.title}
                     </h1>
 
-                    <div className='space-y-4'>
+                    {/* tag  */}
+                    <div className='space-x-4'>
                         <Badge className={'p-2 px-4 bg-[#F5F6F7] text-primary font-bold'} >
                             JA Solar
                         </Badge>
@@ -68,14 +70,18 @@ const EquipmentDetails = () => {
                         </Badge>
                     </div>
 
+
+                    {/* description  */}
                     <p className='mt-4 mb-8 text-lg text-[#6A7283]'>
                         {equipment?.details}
                     </p>
 
+                    {/* term */}
                     <p className='mt-4 text-lg text-[#6A7283]'>
                         Excluding Sales Tax
                     </p>
 
+                    {/* price  */}
                     <div className='flex items-center gap-10 mb-8'>
                         <p className='text-3xl line-through font-semibold text-[#6A7283]'>
                             55,00 €
@@ -86,6 +92,7 @@ const EquipmentDetails = () => {
                     </div>
 
 
+                    {/* quantity  */}
                     <div className='max-w-max text-[#6A7283] mb-8'>
                         <p className='mb-2'>Quantity</p>
                         <Input
@@ -93,11 +100,13 @@ const EquipmentDetails = () => {
                         />
                     </div>
 
+                    {/* button */}
                     <Button className={'w-full py-7'}>
                         Add to Cart
                         <ArrowRight />
                     </Button>
 
+                    {/* social icons  */}
                     <div className='mt-8 flex items-center gap-3'>
                         <FacebookSvg />
                         <PinterestSvg />
