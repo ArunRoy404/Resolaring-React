@@ -4,10 +4,10 @@ import { Link } from "react-router";
 import avatar from '@/assets/Images/Avatar.svg'
 import EquipmentSelect from "./GalleryComponents/EquipmentSelect";
 
-const EquipmentCardSecondary = ({ equipment, setOpenDialog}) => {
+const EquipmentCardSecondary = ({ equipment, setOpenDialog }) => {
 
     return (
-        <div className="bg-white border border-[#DFE0E4] rounded-lg overflow-hidden relative group hover:shadow-md transition-shadow duration-300">
+        <div className="bg-white border flex flex-col border-[#DFE0E4] rounded-lg overflow-hidden relative group hover:shadow-md transition-shadow duration-300">
 
             {/* Image */}
             <img
@@ -29,35 +29,37 @@ const EquipmentCardSecondary = ({ equipment, setOpenDialog}) => {
             </div>
 
 
-            <div className="p-5 space-y-4">
-                {/* Seller & menu*/}
-                <div className="flex justify-between items-center">
+            <div className="p-5 flex-1 flex flex-col gap-4">
+                <div className="space-y-4 flex-1">
+                    {/* Seller & menu*/}
+                    <div className="flex justify-between items-center">
 
-                    {/* seller  */}
-                    <div className="flex items-center gap-2">
-                        <img
-                            src={avatar}
-                            alt={equipment?.seller?.name}
-                            className="w-6 h-6 rounded-full"
-                        />
-                        <span className="text-sm font-medium text-[#6A7283]">{equipment?.seller?.name}</span>
+                        {/* seller  */}
+                        <div className="flex items-center gap-2">
+                            <img
+                                src={avatar}
+                                alt={equipment?.seller?.name}
+                                className="w-6 h-6 rounded-full"
+                            />
+                            <span className="text-sm font-medium text-[#6A7283]">{equipment?.seller?.name}</span>
+                        </div>
+
+                        {/* menu selection button  */}
+                        <EquipmentSelect setOpenDialog={setOpenDialog} />
                     </div>
 
-                    {/* menu selection button  */}
-                    <EquipmentSelect setOpenDialog={setOpenDialog} />
+                    {/* Equipment Name */}
+                    <h3 className="font-semibold text-lg text-primary">{equipment?.name}</h3>
+
+                    {/* description  */}
+                    <p>
+                        {equipment?.details}
+                    </p>
                 </div>
-
-                {/* Equipment Name */}
-                <h3 className="font-semibold text-lg text-primary">{equipment?.name}</h3>
-
-                {/* description  */}
-                <p>
-                    {equipment?.details}
-                </p>
 
 
                 {/* View Details */}
-                <div>
+                <div className="flex-none">
                     <Link
                         to={`/equipments/${equipment?.id}`}
                     >
