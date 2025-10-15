@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import BreadCrumbs from '../BreadCrumbs';
 
 
-const CommonBannerSection = ({ image, title, subtitle, button }) => {
+const CommonBannerSection = ({ image, title, subtitle, button, currentPath }) => {
     return (
         <CommonSection>
 
@@ -25,7 +25,7 @@ const CommonBannerSection = ({ image, title, subtitle, button }) => {
             {/* content  */}
             <div className='relative z-[100] max-w-[800px]'>
                 {/* breadcrumb */}
-                <BreadCrumbs />
+                <BreadCrumbs currentPath={currentPath} />
 
                 {/* title  */}
                 <h1 className='text-white font-bold text-6xl mt-4 mb-3'>
