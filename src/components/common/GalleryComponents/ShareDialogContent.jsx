@@ -4,7 +4,7 @@ import { Facebook, Instagram, Link } from 'lucide-react';
 import React from 'react';
 import { toast } from 'sonner';
 
-const ShareDialogContent = () => {
+const ShareDialogContent = ({ setOpenDialog }) => {
     return (
         <div className='w-full p-10 flex flex-col items-center gap-10'>
             <p className='text-3xl font-bold'>
@@ -13,19 +13,31 @@ const ShareDialogContent = () => {
 
             <div className='flex gap-15'>
                 <Facebook
-                    onClick={() => toast("Successfully shared.")}
+                    onClick={() => {
+                        setOpenDialog(false)
+                        toast.success("Successfully shared.")
+                    }}
                     className='cursor-pointer'
                     size={50} />
                 <XSvg
-                    onClick={() => toast("Successfully shared.")}
+                    onClick={() => {
+                        setOpenDialog(false)
+                        toast.success("Successfully shared.")
+                    }}
                     className='cursor-pointer'
                     size={50} />
                 <Instagram
-                    onClick={() => toast("Successfully shared.")}
+                    onClick={() => {
+                        setOpenDialog(false)
+                        toast.success("Successfully shared.")
+                    }}
                     className='cursor-pointer'
                     size={50} />
                 <Link
-                    onClick={() => toast("Successfully shared.")}
+                    onClick={() => {
+                        setOpenDialog(false)
+                        toast.success("Successfully shared.")
+                    }}
                     className='cursor-pointer'
                     size={50} />
             </div>
