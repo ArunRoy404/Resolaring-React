@@ -18,7 +18,7 @@ const NavButtons = ({ variant }) => {
                         Login
                     </Button>
                 </Link>
-                <Link to={'/'} className='w-full'>
+                <Link to={'/support'} className='w-full'>
                     <Button variant="ghost" className="flex items-center gap-2 justify-center w-full">
                         Book Online
                     </Button>
@@ -39,7 +39,7 @@ const NavButtons = ({ variant }) => {
                     Login
                 </Button>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/support'}>
                 <Button variant="ghost" className="flex items-center gap-2 justify-center">
                     Book Online
                 </Button>

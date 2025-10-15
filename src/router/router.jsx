@@ -14,6 +14,7 @@ import MarketplacePage from "@/pages/Landing/MarketplacePage";
 import GalleryPage from "@/pages/Landing/GalleryPage";
 import EquipmentDetails from "@/pages/Landing/EquipmentDetails";
 import ReviewPage from "@/pages/Landing/ReviewPage";
+import SupportPage from "@/pages/Landing/SupportPage";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
                 path: '/equipments/:id',
                 Component: EquipmentDetails,
                 loader: () => fetch('/equipments.json')
+            },
+            {
+                path: '/support',
+                Component: SupportPage,
             },
         ]
     },
