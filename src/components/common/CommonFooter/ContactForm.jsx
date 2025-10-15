@@ -16,7 +16,7 @@ const ContactForm = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-        toast("Form Submitted Successfully.")
+        toast.success("Form Submitted Successfully.")
     }
 
     return (

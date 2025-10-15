@@ -4,18 +4,27 @@ import {
 } from "@/components/ui/dialog"
 import ShareDialogContent from "./ShareDialogContent"
 import ReportDialogContent from "./ReportDialogContent"
+import AddMediaDialogContent from "./AddMediaDialogContent"
 
 export function ShareEquipmentDialog({ openDialog, setOpenDialog }) {
+    let dialogContent = <p className="text-primary font-bold">No Figma Provided</p>
+
+    switch (openDialog) {
+        case 'share':
+            dialogContent = <ShareDialogContent setOpenDialog={setOpenDialog} />
+            break;
+        case 'report':
+            dialogContent = <ReportDialogContent setOpenDialog={setOpenDialog} />
+            break;
+        case 'addMedia':
+            dialogContent = <AddMediaDialogContent setOpenDialog={setOpenDialog} />
+            break;
+    }
+
     return (
         <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-            <DialogContent className="w-full z-[1000]">
-                {
-                    openDialog === 'share'
-                        ? <ShareDialogContent setOpenDialog={setOpenDialog} />
-                        : openDialog === 'report'
-                            ? <ReportDialogContent setOpenDialog={setOpenDialog} />
-                            : <>No Figma Provided</>
-                }
+            <DialogContent className="z-[1000] min-w-3xl">
+                {dialogContent}
             </DialogContent>
         </Dialog>
     )

@@ -50,7 +50,9 @@ const GallerySection = () => {
                     </div>
 
                     {/* add media button  */}
-                    <Button className={'bg-brand-primary text-white hover:bg-brand-primary/70 text-sm'}>
+                    <Button
+                    onClick={()=>setOpenDialog('addMedia')}
+                    className={'bg-brand-primary text-white hover:bg-brand-primary/70 text-sm'}>
                         Add Media
                     </Button>
 
