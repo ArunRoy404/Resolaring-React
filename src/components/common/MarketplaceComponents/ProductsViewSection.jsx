@@ -13,7 +13,6 @@ import {
     SelectContent,
     SelectGroup,
     SelectItem,
-    SelectLabel,
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
@@ -34,9 +33,9 @@ const ProductsViewSection = () => {
 
 
             <div>
-                <div className='flex gap-6'>
+                <div className='flex items-start gap-6'>
                     {/* filters  */}
-                    <div className='p-6'>
+                    <div className='p-6 sticky top-0'>
                         <ProductsFilter />
                     </div>
 
@@ -56,7 +55,7 @@ const ProductsViewSection = () => {
 
                                 <Select
                                     value={selectedOption}
-                                    onValueChange={(newValue)=>setSelectedOption(newValue)}
+                                    onValueChange={(newValue) => setSelectedOption(newValue)}
                                 >
                                     <SelectTrigger className=" border-none text-[#6A7283] text-lg font-medium">
                                         <SelectValue placeholder="Recommended" />

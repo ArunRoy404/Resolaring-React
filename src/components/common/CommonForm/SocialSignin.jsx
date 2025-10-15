@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import appleIcon from '@/components/common/svg/iconsApple.svg'
-import googleIcon from '@/components/common/svg/iconsGoogle.svg'
+import appleIcon from '@/components/svg/iconsApple.svg'
+import googleIcon from '@/components/svg/iconsGoogle.svg'
 
 
 const SocialSignin = () => {
