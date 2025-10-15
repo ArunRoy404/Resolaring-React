@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { ShoppingCart } from 'lucide-react';
 import GoogleSvg from '@/components/svg/GoogleSvg';
 import car from "@/assets/Images/icon/car.svg"
+import { Link } from 'react-router';
 
 const CartPayment = () => {
     return (
@@ -24,13 +25,15 @@ const CartPayment = () => {
                     <p className='text-primary font-semibold'>$180</p>
                 </div>
 
-                <div className='flex flex-col gap-4'>
-                    <Button
-                        className={' hover:bg-primary hover:text-white '}
-                    >
-                        <ShoppingCart />
-                        Checkout
-                    </Button>
+                <div className='flex flex-col w-full gap-4'>
+                    <Link className='w-full' to={'/checkout/delivery-info'}>
+                        <Button
+                            className={'w-full hover:bg-white hover:text-primary border  '}
+                        >
+                            <ShoppingCart />
+                            Checkout
+                        </Button>
+                    </Link>
                     <Button
                         className={'bg-primary text-white hover:bg-white border border-primary hover:text-black'}
                     >

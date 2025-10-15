@@ -17,6 +17,8 @@ import ReviewPage from "@/pages/Landing/ReviewPage";
 import SupportPage from "@/pages/Landing/SupportPage";
 import CartLayout from "@/layouts/CartLayout";
 import CartPage from "@/pages/Cart/CartPage";
+import CheckoutLayout from "@/layouts/CheckoutLayout";
+import DeliveryInfoPage from "@/pages/Checkout/CheckoutInfoPage";
 
 const router = createBrowserRouter([
     {
@@ -99,6 +101,16 @@ const router = createBrowserRouter([
                 Component: CartPage
             }
         ]
-    }
+    },
+    {
+        path: '/checkout',
+        Component: CheckoutLayout,
+        children: [
+            {
+                path:'delivery-info',
+                Component: DeliveryInfoPage
+            }
+        ]
+    },
 ]);
 export default router                 
