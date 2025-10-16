@@ -21,6 +21,7 @@ import CheckoutLayout from "@/layouts/CheckoutLayout";
 import CheckoutInfoPage from "@/pages/Checkout/CheckoutInfoPage";
 import DeliveryAddressPage from "@/pages/Checkout/DeliveryAddressPage";
 import DeliveryDetailsPage from "@/pages/Checkout/DeliveryDetailsPage";
+import AccountPage from "@/pages/Landing/AccountPage";
 
 const router = createBrowserRouter([
     {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
             {
                 path: '/support',
                 Component: SupportPage,
+            },
+            {
+                path: '/account',
+                Component: AccountPage,
             },
         ]
     },
