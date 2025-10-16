@@ -4,12 +4,12 @@ import EquipmentImage from '@/assets/Images/EquipmentImage.svg'
 
 const OrderSummary = () => {
     return (
-        <div>
+        <div className='mb-10 w-full'>
             <div className='py-2 flex justify-between items-center'>
                 <p className='ext-primary'>Order Summary {'(02)'}</p>
                 <p className='ext-primary underline cursor-pointer'>Edit Cart</p>
             </div>
-            <div className='w-[430px] sticky top-10 max-h-max p-6 bg-gray-100 rounded-2xl'>
+            <div className='lg:w-[430px] sticky top-10 max-h-max p-6 bg-gray-100 rounded-2xl'>
                 <div className=' rounded-md  flex items-center mb-5 justify-between bg-white p-3'>
                     <div className='flex items-center gap-2'>
                         <img src={EquipmentImage} className='w-11 rounded' alt="" />

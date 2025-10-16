@@ -5,7 +5,7 @@ import CommonSection from '@/components/common/CommonSection';
 const CartPage = () => {
     return (
         <CommonSection>
-            <div className='flex gap-13'>
+            <div className='lg:flex gap-13'>
                 <CartTable />
 
                 <CartPayment />

@@ -6,9 +6,11 @@ import { Link } from 'react-router';
 
 const CartPayment = () => {
     return (
-        <div>
+        <div className='mt-4 lg:mt-0'>
             <p className='py-2 text-primary'>Order Summary</p>
-            <div className='w-[430px] sticky top-10 max-h-max p-6 bg-gray-100 rounded-2xl'>
+
+
+            <div className='lg:w-[430px] sticky top-10 max-h-max p-6 bg-gray-100 rounded-2xl'>
                 <div className=' rounded-md  flex items-center mb-5 justify-between bg-white p-3'>
                     <div className='flex items-center gap-2'>
                         <img src={car} alt="" />

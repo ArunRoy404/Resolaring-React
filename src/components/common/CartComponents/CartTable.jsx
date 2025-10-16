@@ -32,8 +32,8 @@ const CartTable = () => {
                             {/* Product */}
                             <TableCell className={'py-12'}>
                                 <div className="flex items-center gap-4">
-                                    <img src={item.image} alt={item.name} className="w-[150px] h-[150px] rounded-md object-cover" />
-                                    <span className="font-medium">{item.name}</span>
+                                    <img src={item.image} alt={item.name} className="w-[40px] md:w-[60px] xl:w-[150px] xl:h-[150px] rounded-md object-cover" />
+                                    <span className="font-medium text-xs lg:text-base">{item.name}</span>
                                 </div>
                             </TableCell>
 
@@ -43,13 +43,13 @@ const CartTable = () => {
                             {/* Quantity */}
                             <TableCell className="text-center">
                                 <div className="flex items-center justify-center gap-3">
-                                    <Button variant="outline" size="icon" className=" bg-primary text-white rounded-full w-8 h-8">
+                                    <Button variant="outline" size="icon" className=" bg-primary text-white rounded-full w-4 h-4 md:w-8 md:h-8">
                                         <Minus className="w-4 h-4" />
                                     </Button>
-                                    <div className="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-sm font-medium">
+                                    <div className="w-4 h-4 md:w-8 md:h-8 flex items-center justify-center rounded-full border border-primary text-sm font-medium">
                                         1
                                     </div>
-                                    <Button variant="outline" size="icon" className="bg-primary text-white rounded-full w-8 h-8">
+                                    <Button variant="outline" size="icon" className="bg-primary text-white rounded-full w-4 h-4 md:w-8 md:h-8">
                                         <Plus className="w-4 h-4" />
                                     </Button>
                                 </div>
@@ -62,7 +62,7 @@ const CartTable = () => {
 
                             {/* Action */}
                             <TableCell className="text-center">
-                                <Button variant="outline" className={'hover:bg-primary'} size="icon">
+                                <Button variant="outline" className={'hover:bg-primary w-5 h-5 md:w-8 md:h-8'} size="icon">
                                     <X className="w-4 h-4 text-gray-500 hover:text-red-500" />
                                 </Button>
                             </TableCell>
