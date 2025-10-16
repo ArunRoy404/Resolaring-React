@@ -14,7 +14,7 @@ const SearchBar = ({ className }) => {
         <div>
             <InputGroup className={
                 cn(
-                    'w-[500px] bg-white rounded-full py-6',
+                    'w-[500px] hidden lg:flex bg-white rounded-full py-6',
                     className
                 )
             }>

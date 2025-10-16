@@ -21,7 +21,7 @@ const FeatureCard = ({ feature, index }) => {
                 style={{ backgroundColor: feature?.color }}
             >
                 <div
-                    className='h-full p-6 relative overflow-hidden hover:shadow-xl'
+                    className='h-full p-3 md:p-6 relative overflow-hidden hover:shadow-xl'
                 >
                     {/* icon  */}
                     <div>
@@ -29,12 +29,12 @@ const FeatureCard = ({ feature, index }) => {
                     </div>
 
                     {/* label  */}
-                    <h1 className='mt-6 mb-4 text-primary font-semibold text-2xl'>
+                    <h1 className='mt-3 md:mt-6 mb-2 md:mb-4 text-primary font-semibold tex-2xl md:text-2xl'>
                         {feature?.label}
                     </h1>
 
                     {/* description */}
-                    <p className='text-[#6A7283] text-base'>
+                    <p className='text-[#6A7283] text-sm md:text-base'>
                         {feature?.description}
                     </p>
                 </div>

@@ -17,21 +17,21 @@ const CTASection = () => {
             >
 
                 {/* title  */}
-                <h1 className='text-center text-white text-6xl font-semibold'>
+                <h1 className='text-center text-white text-2xl md:text-6xl font-semibold'>
                     Ready to Buy, Sell, or Recycle Solar Equipment?
                 </h1>
 
 
                 {/* cta  */}
-                <p className='text-white text-2xl text-center mt-6 mb-12 '>
+                <p className='text-white text-sm md:text-2xl text-center mt-3 mb-6 md::mt-6 md:mb-12 '>
                     Sign up now and start contributing to a greener future.
                 </p>
 
                 {/* buttons  */}
-                <div className='max-w-max mx-auto space-x-4'>
+                <div className='md:max-w-max mx-auto space-x-4 space-y-1 w-full'>
                     <Button
                         size={'lg'}
-                        className={"hover:bg-white/40 hover:text-white"}
+                        className={"w-full md:w-auto hover:bg-white/40 hover:text-white"}
                     >
                         Become a Seller
                         <ArrowRight />
@@ -39,7 +39,7 @@ const CTASection = () => {
                     <Button
                         size={'lg'}
                         variant={"outline"}
-                        className={"bg-white/40 text-white border-none"}
+                        className={"w-full md:w-auto bg-white/40 text-white border-none"}
                     >
                         Explore the Marketplace
                     </Button>

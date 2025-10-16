@@ -21,7 +21,7 @@ const BenefitsCard = ({ benefit, index }) => {
                 style={{ backgroundColor: benefit?.color }}
             >
                 <div
-                    className='h-full p-6 relative overflow-hidden hover:shadow-xl'
+                    className='h-full p-3 md:p-6 relative overflow-hidden hover:shadow-xl'
                 >
                     {/* icon  */}
                     <div>
@@ -29,7 +29,7 @@ const BenefitsCard = ({ benefit, index }) => {
                     </div>
 
                     {/* label  */}
-                    <h1 className='mt-6 mb-4 text-primary font-semibold text-2xl'>
+                    <h1 className='mt-3 md:mt-6 mb-2 md:mb-4 text-primary font-semibold text-2xl'>
                         {benefit?.label}
                     </h1>
 

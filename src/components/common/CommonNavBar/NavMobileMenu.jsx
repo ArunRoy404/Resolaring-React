@@ -17,7 +17,7 @@ export default function NavMobileMenu({ navLinks, side='top' }) {
             <SheetTrigger asChild>
                 <Menu size={22} />
             </SheetTrigger>
-            <SheetContent side={side}>
+            <SheetContent side={side} className={'z-[1000]'}>
                 <SheetHeader>
                     <SheetTitle>ReSolaring</SheetTitle>
                 </SheetHeader>

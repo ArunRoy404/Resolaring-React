@@ -8,11 +8,11 @@ const FooterAbout = ({ footerData }) => {
     return (
         <>
             {/* about column */}
-            <div className='min-w-[600px]'>
+            <div className='lg:min-w-[600]'>
                 <Logo variant={'secondary'} />
 
                 {/* description */}
-                <p className='mt-6 mb-10 max-w-[508px]'>
+                <p className='mt-6 mb-10 w-full md:max-w-[508px]'>
                     {footerData?.description}
                 </p>
 

@@ -7,12 +7,12 @@ const ProcedureCard = ({ procedure, index }) => {
             data-aos-delay={index * 200}
         >
             <div
-                className='bg-white p-6 rounded-2xl hover:bg-secondary ease-in-out  duration-300'
+                className='bg-white p-3 md:p-6 rounded-2xl hover:bg-secondary ease-in-out  duration-300'
             >
                 <div>
                     <img src={procedure?.icon} alt="" />
                 </div>
-                <h1 className='mt-8 mb-4 text-primary font-semibold text-2xl'>
+                <h1 className='mt-4 md:mt-8 nb-2 md:mb-4 text-primary font-semibold text-2xl'>
                     {procedure?.label}
                 </h1>
                 <p

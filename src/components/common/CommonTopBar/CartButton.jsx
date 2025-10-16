@@ -8,7 +8,7 @@ const CartButton = () => {
         <div className='flex items-center gap-3'>
             <div className='relative'>
                 <Link to={'/cart'}>
-                    <Button variant={'icon'} className="bg-white rounded-full p-6 w-12" >
+                    <Button variant={'icon'} className="bg-white rounded-full md:p-6 w-9 md:w-12" >
                         <ShoppingCart />
                     </Button>
                 </Link>
@@ -18,7 +18,7 @@ const CartButton = () => {
                 </p>
             </div>
 
-            <p className='text-white font-semibold text-lg'>$98.29</p>
+            <p className='text-white font-semibold text-sm lg:text-lg'>$98.29</p>
 
         </div>
     );

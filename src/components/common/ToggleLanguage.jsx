@@ -6,7 +6,7 @@ const ToggleLanguage = () => {
     return (
         <Button
             variant={'outline'}
-            className={' bg-transparent text-white border-white py-6'}
+            className={' bg-transparent text-white border-white md:py-6'}
         >
             <Globe />
             EN

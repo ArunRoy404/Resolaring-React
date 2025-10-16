@@ -6,33 +6,34 @@ import EquipmentSelect from "./GalleryComponents/EquipmentSelect";
 
 const EquipmentCardSecondary = ({ equipment, setOpenDialog }) => {
 
+    console.log(equipment);
+
     return (
         <div className="bg-white border flex flex-col border-[#DFE0E4] rounded-lg overflow-hidden relative group hover:shadow-md transition-shadow duration-300">
 
             {/* Image */}
             <img
                 src={equipment?.image}
-                alt={equipment?.name}
-                className="w-full h-52 object-cover"
+                className="w-full h-30 md:h-52 object-cover"
             />
 
 
             {/* chat and add to favorite */}
             <div className="flex items-center gap-3 absolute top-4 right-6">
                 <Link to={`review/${equipment?.id}`}>
-                    <button className="cursor-pointer bg-white w-9 h-9 flex items-center justify-center rounded-full shadow hover:bg-secondary transition">
-                        <MessagesSquare color="gray" size={15} />
+                    <button className="cursor-pointer bg-white w-6 h-6 md:w-9 md:h-9 flex items-center justify-center rounded-full shadow hover:bg-secondary transition">
+                        <MessagesSquare color="gray" className="w-4" />
                     </button>
                 </Link>
 
-                <button className="cursor-pointer bg-white w-9 h-9 flex items-center justify-center rounded-full shadow hover:bg-secondary transition">
-                    <Heart color="gray" size={15} />
+                <button className="cursor-pointer bg-white w-6 h-6 md:w-9 md:h-9 flex items-center justify-center rounded-full shadow hover:bg-secondary transition">
+                    <Heart color="gray" className="w-4" />
                 </button>
             </div>
 
 
-            <div className="p-5 flex-1 flex flex-col gap-4">
-                <div className="space-y-4 flex-1">
+            <div className="p-3 md:p-5 flex-1 flex flex-col gap-4">
+                <div className=" space-y-2 lg:space-y-4 flex-1">
                     {/* Seller & menu*/}
                     <div className="flex justify-between items-center">
 
@@ -40,10 +41,10 @@ const EquipmentCardSecondary = ({ equipment, setOpenDialog }) => {
                         <div className="flex items-center gap-2">
                             <img
                                 src={avatar}
-                                alt={equipment?.seller?.name}
+                                alt={equipment?.author}
                                 className="w-6 h-6 rounded-full"
                             />
-                            <span className="text-sm font-medium text-[#6A7283]">{equipment?.seller?.name}</span>
+                            <span className="text-xs md:text-sm font-medium text-[#6A7283]">{equipment?.author}</span>
                         </div>
 
                         {/* menu selection button  */}
@@ -51,10 +52,10 @@ const EquipmentCardSecondary = ({ equipment, setOpenDialog }) => {
                     </div>
 
                     {/* Equipment Name */}
-                    <h3 className="font-semibold text-lg text-primary">{equipment?.name}</h3>
+                    <h3 className="font-semibold text-sm md:text-lg text-primary">{equipment?.name}</h3>
 
                     {/* description  */}
-                    <p>
+                    <p className="text-primary text-[10px] md:text-sm lg:text-base">
                         {equipment?.details}
                     </p>
                 </div>
@@ -67,7 +68,7 @@ const EquipmentCardSecondary = ({ equipment, setOpenDialog }) => {
                     >
                         <Button
                             variant="outline"
-                            className="group flex items-center justify-center gap-2 relative overflow-hidden"
+                            className="text-xs md:text-sm w-full md:w-auto group flex items-center justify-center gap-2 relative overflow-hidden"
                         >
                             <span className="transition-all duration-300 group-hover:mr-4">
                                 View Details

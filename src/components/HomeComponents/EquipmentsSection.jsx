@@ -8,6 +8,7 @@ import { Link } from "react-router";
 import EquipmentCardSecondary from "../common/EquipmentCardSecondary";
 import DecorationEllipse from "../common/Decoration/DecorationEllipse";
 import DecorationSolar1 from "../common/Decoration/DecorationSolar1";
+import EquipmentCard from "../common/EquipmentCard";
 
 const EquipmentsSection = () => {
 
@@ -22,9 +23,9 @@ const EquipmentsSection = () => {
 
             <div className="relative z-20">
                 {/* Equipments Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">
                     {equipments.map((item) => (
-                        <EquipmentCardSecondary key={item.id} equipment={item} />
+                        <EquipmentCard key={item.id} equipment={item} />
                     ))}
                 </div>
 

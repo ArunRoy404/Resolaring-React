@@ -13,10 +13,10 @@ const ProcedureSection = () => {
         <CommonSection
             className='bg-background-secondary'
         >
-            <div className='relative z-20 gap-12 grid grid-cols-3'>
+            <div className='relative flex flex-col-reverse z-20 gap-12 lg:grid grid-cols-3'>
                 {/* image  */}
-                <div className='h-full flex items-center'>
-                    <img src={image} alt="" />
+                <div className='h-full items-center hidden lg:flex'>
+                    <img src={image} alt=""  className=''/>
                 </div>
 
 
@@ -40,6 +40,7 @@ const ProcedureSection = () => {
 
                     <Button
                         size={'lg'}
+                        className={'w-full lg:w-auto'}
                     >
                         Start Selling Today
                         <ArrowRight />

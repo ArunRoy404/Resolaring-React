@@ -15,7 +15,7 @@ const Footer = () => {
             >
 
                 {/* container  */}
-                <div className='flex justify-between gap-6'>
+                <div className='flex flex-col lg:flex-row justify-between md:gap-6 space-y-12'>
 
                     {/* About  */}
                     <FooterAbout footerData={footerData} />

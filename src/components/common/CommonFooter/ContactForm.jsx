@@ -96,7 +96,7 @@ const ContactForm = () => {
                         />
                     </div>
 
-                    <Button>
+                    <Button className={'w-full  '}>
                         Submit here
                         <ArrowRight />
                     </Button>

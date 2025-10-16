@@ -30,7 +30,7 @@ const NavBar = () => {
 
     return (
         <header
-            className={`border-b bg-background/80 backdrop-blur-md sticky top-0 z-[1000] transition-transform duration-500 ease-in-out 
+            className={`border-b bg-background/80 backdrop-blur-md sticky top-0 z-[200] transition-transform duration-500 ease-in-out 
             ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
         >
             <div className="container mx-auto px-4 flex items-center justify-between py-3 md:py-6">
