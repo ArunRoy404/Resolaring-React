@@ -20,6 +20,7 @@ import CartPage from "@/pages/Cart/CartPage";
 import CheckoutLayout from "@/layouts/CheckoutLayout";
 import CheckoutInfoPage from "@/pages/Checkout/CheckoutInfoPage";
 import DeliveryAddressPage from "@/pages/Checkout/DeliveryAddressPage";
+import DeliveryDetailsPage from "@/pages/Checkout/DeliveryDetailsPage";
 
 const router = createBrowserRouter([
     {
@@ -117,7 +118,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'delivery-details',
-                element: <p>ok</p>
+                Component: DeliveryDetailsPage
             },
         ]
     },
