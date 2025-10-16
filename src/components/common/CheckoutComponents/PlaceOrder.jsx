@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import React from 'react';
+import { Link } from 'react-router';
 
 const PlaceOrder = () => {
     return (
@@ -18,11 +19,13 @@ const PlaceOrder = () => {
                 </div>
             </div>
 
-            <Button
-            className={'py-7 w-full'}
-            >
-                Place Order & Pay
-            </Button>
+            <Link to={'/checkout/delivery-address'}>
+                <Button
+                    className={'py-7 w-full'}
+                >
+                    Place Order & Pay
+                </Button>
+            </Link>
         </div>
     );
 };

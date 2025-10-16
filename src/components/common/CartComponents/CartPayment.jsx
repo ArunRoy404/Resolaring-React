@@ -26,7 +26,7 @@ const CartPayment = () => {
                 </div>
 
                 <div className='flex flex-col w-full gap-4'>
-                    <Link className='w-full' to={'/checkout/delivery-info'}>
+                    <Link className='w-full' to={'/checkout'}>
                         <Button
                             className={'w-full hover:bg-white hover:text-primary border  '}
                         >
