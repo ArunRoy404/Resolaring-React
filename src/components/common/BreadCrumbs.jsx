@@ -12,7 +12,7 @@ const BreadCrumbs = ({ className, currentPath }) => {
 
     return (
         <p className={cn(
-            'text-white text-lg font-medium',
+            'text-white text-xs md:text-lg font-medium',
             className
         )}>
             {

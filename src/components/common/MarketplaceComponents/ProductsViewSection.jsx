@@ -24,7 +24,9 @@ const ProductsViewSection = () => {
     const [selectedOption, setSelectedOption] = useState('Recommended')
 
     return (
-        <CommonSection>
+        <CommonSection
+        className={'!overflow-visible'}
+        >
             <SectionHeading className={'text-left relative'}>
                 Your market for solar panels
                 <div className="absolute top-0 right-0">
@@ -34,17 +36,17 @@ const ProductsViewSection = () => {
 
 
             <div>
-                <div className='flex items-start gap-6'>
+                <div className='flex items-start gap-2 md:gap-6'>
                     {/* filters  */}
-                    <div className='p-6 sticky top-0'>
+                    <div className='p-2 md:p-6 sticky top-5'>
                         <ProductsFilter />
                     </div>
 
 
                     {/* Equipments Grid*/}
-                    <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                        <div className='text-[#6A7283] text-lg font-medium col-span-3 py-3 flex items-center justify-between'>
+                        <div className='text-[#6A7283] text-xs lg:text-lg font-medium md:grid-cols-2 lg:col-span-3 py-3 flex items-center justify-between'>
                             <p>
                                 {equipments?.length} products
                             </p>
@@ -58,7 +60,7 @@ const ProductsViewSection = () => {
                                     value={selectedOption}
                                     onValueChange={(newValue) => setSelectedOption(newValue)}
                                 >
-                                    <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-lg font-medium">
+                                    <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-xs lg:text-lg font-medium">
                                         <SelectValue placeholder="Recommended" />
                                     </SelectTrigger>
                                     <SelectContent>

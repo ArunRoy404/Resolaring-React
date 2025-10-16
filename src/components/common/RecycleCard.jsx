@@ -8,14 +8,16 @@ const RecycleCard = ({ recycleInfo, index }) => {
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
                 className='rounded-2xl overflow-hidden relative h-full'>
-                <img src={recycleInfo?.image} alt="" className='w-full' />
+                <div>
+                    <img src={recycleInfo?.image} alt="" className='w-full' />
+                </div>
 
                 {/* details  */}
-                <div className='p-6 space-y-4'>
-                    <h2 className='text-primary font-semibold text-3xl'>
+                <div className='p-3 lg:p-6 space-y-4'>
+                    <h2 className='text-primary font-semibold text-xl md:text-3xl'>
                         {recycleInfo?.title}
                     </h2>
-                    <p className='text-primary'>
+                    <p className='text-primary text-sm md:text-base'>
                         {recycleInfo?.description}
                     </p>
                 </div>

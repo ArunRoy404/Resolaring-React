@@ -12,10 +12,10 @@ const ProductsFilter = () => {
 
             {/* manufacturer  */}
             <div>
-                <p className='text-primary font-semibold text-3xl border-b pb-2'>
+                <p className='text-primary font-semibold  lg:text-3xl border-b pb-2'>
                     Manufacturer By
                 </p>
-                <ul className='flex flex-col p-8 space-y-1 text-lg text-[#6A7283]'>
+                <ul className='flex flex-col p-2 lg:p-8 space-y-1 text-sm lg:text-lg text-[#6A7283]'>
                     {
                         filterOptions?.manufacturer?.map(filter => {
                             return (
@@ -36,10 +36,10 @@ const ProductsFilter = () => {
 
             {/* filter  */}
             <div>
-                <p className='text-primary font-semibold text-3xl border-b pb-2'>
+                <p className='text-primary font-semibold lg:0text-3xl border-b pb-2'>
                     Filter By
                 </p>
-                <ul className='flex flex-col p-8 space-y-2 text-lg text-[#6A7283]'>
+                <ul className='flex flex-col p-2 lg:p-8 space-y-2 text-sm lg:text-lg text-[#6A7283]'>
                     <p className='text-bold text-primary text-lg'>
                         Product Type
                     </p>
@@ -47,7 +47,7 @@ const ProductsFilter = () => {
                         filterOptions?.filterBy?.productType?.map(filter => {
                             return (
                                 <li className='flex gap-2 items-center'>
-                                    <Checkbox />
+                                    <Checkbox  />
                                     {filter}
                                 </li>
                             )
@@ -59,7 +59,7 @@ const ProductsFilter = () => {
 
             {/* price range  */}
             <div>
-                <p className='text-primary font-semibold text-3xl border-b pb-2'>
+                <p className='text-primary font-semibold lg:text-3xl border-b pb-2'>
                     Price Range
 
                 </p>

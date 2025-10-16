@@ -28,13 +28,13 @@ const CommonBannerSection = ({ image, title, subtitle, button, currentPath }) =>
                 <BreadCrumbs currentPath={currentPath} />
 
                 {/* title  */}
-                <h1 className='text-white font-bold text-6xl mt-4 mb-3'>
+                <h1 className='text-white font-bold text-2xl md:text-4xl lg:text-6xl mt-4 mb-3'>
                     {title}
                 </h1>
 
 
                 {/* cta  */}
-                <p className='text-white text-lg mb-8'>
+                <p className='text-white text-xs lg:text-lg mb-8'>
                     {subtitle}
                 </p>
 
@@ -46,7 +46,7 @@ const CommonBannerSection = ({ image, title, subtitle, button, currentPath }) =>
                         <Link to={button?.path}>
                             <Button
                                 size={'lg'}
-                                className={"hover:bg-white/40 py-6 hover:text-white"}
+                                className={"hover:bg-white/40 text-sm lg:text-base lg:py-6 hover:text-white"}
                             >
                                 {button?.label}
                                 <ArrowRight />

@@ -38,7 +38,7 @@ const EquipmentReviewSection = ({ equipment }) => {
 
 
                 {/* equipment details  */}
-                <div className='space-y-6'>
+                <div className='space-y-3 lg:space-y-6'>
                     {/* seller details  */}
                     <div className='flex items-center gap-12 text-primary/60'>
                         <div className='flex items-center gap-2 '>
@@ -61,14 +61,14 @@ const EquipmentReviewSection = ({ equipment }) => {
 
 
                     {/* equipment title   */}
-                    <p className='text-primary font-semibold text-5xl max-w-6xl'>
+                    <p className='text-primary font-semibold text-xl md:text-2xl  lg:text-5xl max-w-6xl'>
                         {equipment?.title}
                         {" – Specifications, Features, and Performance Details"}
                     </p>
 
 
                     {/* description  */}
-                    <p className='text-primary/50'>
+                    <p className='text-primary/50 text-sm md:text-base'>
                         {equipment?.details}
                     </p>
                 </div>
@@ -90,14 +90,14 @@ const EquipmentReviewSection = ({ equipment }) => {
                                         {/* comment  */}
                                         <div className='p-4 bg-gray-100 rounded-xl'>
                                             {/* user  */}
-                                            <p className='text-primary text-2xl'>John Doe</p>
+                                            <p className='text-primary lg:text-2xl'>John Doe</p>
 
-                                            <p className='text-gray-500'>
+                                            <p className='text-gray-500 text-xs lg:text-base'>
                                                 It seems like I tried to add comments without having the document open. If you’d like me to review or enhance your solar panel description, just let me know, and I’ll open it in the editor for detailed feedback!
                                             </p>
                                         </div>
                                         {/* time  */}
-                                        <p className='text-sm text-gray-800'>8 m</p>
+                                        <p className='text-xs lg:text-sm text-gray-800'>8 m</p>
                                     </div>
                                 </div>
                             )
@@ -124,7 +124,9 @@ const EquipmentReviewSection = ({ equipment }) => {
                         />
 
                         {/* send  */}
-                        <Button size={'lg'}>
+                        <Button size={'lg'}
+                        className={'w-full md:w-auto'}
+                        >
                             Send
                             <ArrowRight />
                         </Button>

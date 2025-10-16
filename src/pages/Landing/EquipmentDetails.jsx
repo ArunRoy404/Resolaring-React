@@ -33,11 +33,11 @@ const EquipmentDetails = () => {
                 currentPath={equipment?.title}
             />
 
-            <div className='grid grid-cols-2 gap-12 mt-6'>
+            <div className='grid lg:grid-cols-2 gap-12 mt-6'>
 
                 {/* images grid  */}
                 <div className='grid grid-cols-2 gap-6'>
-                    <div className='relative w-full group h-[300px] col-span-2 rounded-2xl overflow-hidden' >
+                    <div className='relative w-full group h-[200px] md:h-[250px] lg:h-[300px] col-span-2 rounded-2xl overflow-hidden' >
                         <img className='w-full' src={equipment?.image} alt={equipment?.title} />
                         <div className="absolute inset-0 group-hover:bg-black/50 transition-all duration-300 ease-in-out"></div>
                         <Button className={'rounded opacity-0 group-hover:opacity-100 bg-white/20 absolute top-4 right-4'}>
