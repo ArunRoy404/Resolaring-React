@@ -4,10 +4,29 @@ import CommonSection from '@/components/common/CommonSection';
 import SectionHeading from '@/components/common/SectionHeading';
 import { Separator } from '@/components/ui/separator';
 import TopBar from '@/shared/TopBar';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Outlet } from 'react-router';
+import AOS from 'aos';
+import Lenis from 'lenis';
 
 const CheckoutLayout = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 100,
+        });
+
+        const lenis = new Lenis({
+            autoRaf: true,
+        });
+
+        return () => {
+            lenis.destroy()
+        }
+
+    }, []);
+
     return (
         <main>
             <TopBar />
