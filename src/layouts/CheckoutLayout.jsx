@@ -2,6 +2,7 @@ import GooglePayButton from '@/components/common/CheckoutComponents/GooglePayBut
 import OrderSummary from '@/components/common/CheckoutComponents/OrderSummary';
 import CommonSection from '@/components/common/CommonSection';
 import SectionHeading from '@/components/common/SectionHeading';
+import { Separator } from '@/components/ui/separator';
 import TopBar from '@/shared/TopBar';
 import React from 'react';
 import { Outlet } from 'react-router';
@@ -19,9 +20,17 @@ const CheckoutLayout = () => {
                 </SectionHeading>
 
                 <div className='flex gap-10'>
-                    <div className='flex-1'>
+                    <div className='flex-1 space-y-8'>
                         <GooglePayButton />
 
+                        <div className='flex items-center justify-center gap-3 font-bold text-primary'>
+                            <div className='w-full'><Separator /></div>
+                            <span>Or</span>
+                            <div className='w-full'><Separator /></div>
+                        </div>
+
+
+                        {/* outlet  */}
                         <Outlet />
                     </div>
 
