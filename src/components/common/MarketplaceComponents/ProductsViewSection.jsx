@@ -17,6 +17,7 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { filterOptions } from '@/data/filterOptions';
+import DecorationSolar2 from '../Decoration/DecorationSolar2';
 
 
 const ProductsViewSection = () => {
@@ -95,6 +96,10 @@ const ProductsViewSection = () => {
                     </Link>
                 </div>
             </div>
+
+
+
+            <DecorationSolar2 reverse />
         </CommonSection>
     );
 };

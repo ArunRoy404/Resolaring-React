@@ -3,6 +3,8 @@ import CommonSection from '../CommonSection';
 import SectionHeading from '../SectionHeading';
 import { benefits } from '@/data/benefitsData';
 import BenefitsCard from '../BenefitsCard';
+import DecorationSolar2 from '../Decoration/DecorationSolar2';
+import DecorationEllipse from '../Decoration/DecorationEllipse';
 
 const BenefitsSection = () => {
     return (
@@ -20,6 +22,10 @@ const BenefitsSection = () => {
                     <BenefitsCard key={item.label} index={index} benefit={item} />
                 ))}
             </div>
+
+
+              <DecorationEllipse className='absolute -top-1/2 left-1/2 -translate-x-1/2 ' />
+              <DecorationSolar2/>
         </CommonSection>
     );
 };

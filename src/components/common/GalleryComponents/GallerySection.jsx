@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import EquipmentCardSecondary from "../EquipmentCardSecondary";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import ShareEquipment from "./ShareEquipmentDialog";
+import DecorationSolar2 from "../Decoration/DecorationSolar2";
 const filterOptions = [
     'Most Recent',
     'Most Liked',
@@ -51,8 +52,8 @@ const GallerySection = () => {
 
                     {/* add media button  */}
                     <Button
-                    onClick={()=>setOpenDialog('addMedia')}
-                    className={'bg-brand-primary text-white hover:bg-brand-primary/70 text-sm'}>
+                        onClick={() => setOpenDialog('addMedia')}
+                        className={'bg-brand-primary text-white hover:bg-brand-primary/70 text-sm'}>
                         Add Media
                     </Button>
 
@@ -84,6 +85,9 @@ const GallerySection = () => {
 
             {/* dialog */}
             <ShareEquipment openDialog={openDialog} setOpenDialog={setOpenDialog} />
+
+
+            <DecorationSolar2 reverse />
         </CommonSection>
     );
 };

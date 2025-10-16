@@ -14,6 +14,7 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
 } from "@/components/ui/dropdown-menu"
+import DecorationSolar2 from '../Decoration/DecorationSolar2';
 
 const SupportForm = () => {
     const [selected, setSelected] = useState("Choose product")
@@ -108,6 +109,9 @@ const SupportForm = () => {
                     </Button>
                 </div>
             </form>
+
+
+            <DecorationSolar2 reverse />
         </CommonSection>
     );
 };

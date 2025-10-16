@@ -6,12 +6,14 @@ import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import EquipmentCardSecondary from "../common/EquipmentCardSecondary";
+import DecorationEllipse from "../common/Decoration/DecorationEllipse";
+import DecorationSolar1 from "../common/Decoration/DecorationSolar1";
 
 const EquipmentsSection = () => {
 
     return (
         <CommonSection
-         className='bg-background-secondary'
+            className='bg-background-secondary'
         >
             {/* Section Title */}
             <SectionHeading className={"text-left"}>
@@ -38,6 +40,10 @@ const EquipmentsSection = () => {
                     </Button>
                 </Link>
             </div>
+
+            <DecorationEllipse className='absolute top-0 right-0 translate-x-1/2 -translate-y-1/2' />
+            <DecorationEllipse className='absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2' />
+            <DecorationSolar1/>
         </CommonSection>
     );
 };

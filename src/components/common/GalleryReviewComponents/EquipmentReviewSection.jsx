@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
+import DecorationSolar2 from '../Decoration/DecorationSolar2';
 
 const EquipmentReviewSection = ({ equipment }) => {
 
@@ -131,6 +132,7 @@ const EquipmentReviewSection = ({ equipment }) => {
                 </div>
 
 
+                <DecorationSolar2 reverse />
             </CommonSection>
         </div>
     );

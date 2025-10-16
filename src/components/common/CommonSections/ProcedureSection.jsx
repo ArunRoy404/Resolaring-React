@@ -6,6 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import { procedures } from '@/data/procedureData';
 import ProcedureCard from '../ProcedureCard';
 import { Button } from '@/components/ui/button';
+import DecorationEllipse from '../Decoration/DecorationEllipse';
 
 const ProcedureSection = () => {
     return (
@@ -48,6 +49,8 @@ const ProcedureSection = () => {
                 </div>
             </div>
 
+
+            <DecorationEllipse className='absolute right-0 translate-x-1/2 -translate-y-1/2' />
         </CommonSection>
     );
 };
