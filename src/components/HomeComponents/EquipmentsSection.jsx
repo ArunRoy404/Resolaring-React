@@ -20,30 +20,32 @@ const EquipmentsSection = () => {
                 Buy, Sell and Recycle
             </SectionHeading>
 
-            {/* Equipments Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {equipments.map((item) => (
-                    <EquipmentCardSecondary key={item.id} equipment={item} />
-                ))}
-            </div>
+            <div className="relative z-20">
+                {/* Equipments Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {equipments.map((item) => (
+                        <EquipmentCardSecondary key={item.id} equipment={item} />
+                    ))}
+                </div>
 
-            {/* View All Products */}
-            <div className="mt-10 text-center">
-                <Link
-                    to={'/equipments'}
-                >
-                    <Button
-                        size={'lg'}
+                {/* View All Products */}
+                <div className="mt-10 text-center">
+                    <Link
+                        to={'/equipments'}
                     >
-                        View all products
-                        <ArrowRight />
-                    </Button>
-                </Link>
+                        <Button
+                            size={'lg'}
+                        >
+                            View all products
+                            <ArrowRight />
+                        </Button>
+                    </Link>
+                </div>
             </div>
 
             <DecorationEllipse className='absolute top-0 right-0 translate-x-1/2 -translate-y-1/2' />
             <DecorationEllipse className='absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2' />
-            <DecorationSolar1/>
+            <DecorationSolar1 />
         </CommonSection>
     );
 };

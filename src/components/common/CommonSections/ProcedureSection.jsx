@@ -13,7 +13,7 @@ const ProcedureSection = () => {
         <CommonSection
             className='bg-background-secondary'
         >
-            <div className='gap-12 grid grid-cols-3'>
+            <div className='relative z-20 gap-12 grid grid-cols-3'>
                 {/* image  */}
                 <div className='h-full flex items-center'>
                     <img src={image} alt="" />
@@ -48,8 +48,6 @@ const ProcedureSection = () => {
 
                 </div>
             </div>
-
-
             <DecorationEllipse className='absolute right-0 translate-x-1/2 -translate-y-1/2' />
         </CommonSection>
     );

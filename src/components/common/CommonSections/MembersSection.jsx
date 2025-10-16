@@ -8,20 +8,22 @@ import DecorationGrid from '../Decoration/DecorationGrid';
 const MembersSection = () => {
     return (
         <CommonSection>
-            <SectionHeading className={'text-left'}>
-                Our Expert Member
-            </SectionHeading>
+            <div className='z-20 relative'>
+                <SectionHeading className={'text-left'}>
+                    Our Expert Member
+                </SectionHeading>
 
 
-            {/* Members Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {members.map((item, index) => (
-                    <MemberCard key={item.id} member={item} index={index} />
-                ))}
+                {/* Members Grid */}
+                <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {members.map((item, index) => (
+                        <MemberCard key={item.id} member={item} index={index} />
+                    ))}
+                </div>
+
             </div>
 
-
-            <DecorationGrid  reverse/>
+            <DecorationGrid reverse />
         </CommonSection>
     );
 };
