@@ -6,7 +6,7 @@ import ToggleLanguage from '../components/common/ToggleLanguage';
 
 const TopBar = () => {
     return (
-        <div className='py-8 bg-primary'>
+        <div className='py-4 md:py-8 bg-primary'>
             <div className='flex items-center container mx-auto px-4 justify-between'>
                 <div className='flex items-center gap-12'>
                     <HelpLogo />

@@ -18,7 +18,7 @@ const CartButton = () => {
                 </p>
             </div>
 
-            <p className='text-white font-semibold text-sm lg:text-lg'>$98.29</p>
+            <p className='text-white font-semibold text-sm lg:text-lg hidden md:block'>$98.29</p>
 
         </div>
     );
