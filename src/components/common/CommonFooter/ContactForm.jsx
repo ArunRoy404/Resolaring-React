@@ -25,7 +25,7 @@ const ContactForm = () => {
                 Contact
             </p>
 
-            <p>
+            <p className='mb-2'>
                 Our team is here to answer any questions you may have, so please contact us by filling out the following fields or directly via email or phone!
             </p>
 
@@ -37,7 +37,7 @@ const ContactForm = () => {
                     <div
                         className='space-y-6'
                     >
-                        <div className='flex items-center justify-between gap-3'>
+                        <div className='md:flex space-y-3 items-center justify-between gap-3'>
                             <div className='flex-1'>
                                 <Label htmlFor='name'> Name*</Label>
                                 <Input
@@ -61,7 +61,7 @@ const ContactForm = () => {
                         </div>
 
 
-                        <div className='flex items-center justify-between gap-3'>
+                        <div className='md:flex space-y-3 items-center justify-between gap-3'>
                             <div className='flex-1'>
                                 <Label htmlFor='telephone'> Telephone*</Label>
                                 <Input
