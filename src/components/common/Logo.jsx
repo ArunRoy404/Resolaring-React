@@ -32,16 +32,16 @@ const Logo = ({ className, variant}) => {
             <a
                 href="/"
                 className={cn(
-                    "flex items-center w-full gap-4 font-bold text-xl text-primary hover:opacity-90 transition-opacity",
+                    "flex items-center w-full gap-2 md:gap-4 font-bold text-xl text-primary hover:opacity-90 transition-opacity",
                     className
                 )}
             >
-                <img src={LogoBlack} alt="ReSolaring" className="w-14" />
-                <span className="text-[32px] font-semibold">
+                <img src={LogoBlack} alt="ReSolaring" className=" w-6 md:w-10 lg:w-14" />
+                <span className="md:text-3xl lg:text-[32px] font-semibold">
                     Resolaring
                 </span>
             </a>
-            <span className="text-[#6A7283] text-xs">Recycling and installing panels for a better future</span>
+            <span className="text-[#6A7283] text-xs hidden md:block">Recycling and installing panels for a better future</span>
         </div>
     );
 };
