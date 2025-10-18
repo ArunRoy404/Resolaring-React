@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button';
 import React from 'react';
 import AccountForm from './AccountForm';
 import DecorationSolar2 from '../Decoration/DecorationSolar2';
+import AccountLoginInfo from './AccountLoginInfo';
+import AccountPrivacyInfo from './AccountPrivacyInfo';
 
 const AccountSection = () => {
     return (
@@ -41,6 +43,13 @@ const AccountSection = () => {
 
             {/* Form  */}
             <AccountForm />
+
+
+            {/* login info  */}
+            <AccountLoginInfo />
+
+            {/* privacy info  */}
+            <AccountPrivacyInfo />
 
             <DecorationSolar2 reverse />
         </div>

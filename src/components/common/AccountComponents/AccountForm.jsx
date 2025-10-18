@@ -164,7 +164,7 @@ const AccountForm = () => {
                             size={'lg'}
                             className={'bg-brand-primary text-white hover:bg-white hover:text-black border border-brand-primary'}
                         >
-                            Update Info
+                           Save Changes
                         </Button>
                     </div>
                 </div>
