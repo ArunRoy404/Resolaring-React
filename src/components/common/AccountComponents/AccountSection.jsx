@@ -1,13 +1,14 @@
 import { Button } from '@/components/ui/button';
 import React from 'react';
 import AccountForm from './AccountForm';
+import DecorationSolar2 from '../Decoration/DecorationSolar2';
 
 const AccountSection = () => {
     return (
         <div>
 
             {/* account actions  */}
-            <div className='grid grid-cols-2 py-12 border-b '>
+            <div className='grid grid-cols-2 gap-12 py-12 border-b '>
                 <div >
                     <h1
                         className="text-primary font-semibold text-3xl"
@@ -38,23 +39,10 @@ const AccountSection = () => {
             </div>
 
 
-            {/* display info  */}
-            <div className='py-12 border-b '>
-                <div className='mb-12' >
-                    <h1
-                        className="text-primary font-semibold text-3xl"
-                    >
-                        Display info
-                    </h1>
-                    <p
-                        className='text-[#6A7283] '
-                    >
-                        This information will be visible to all members of this site.
-                    </p>
-                </div>
+            {/* Form  */}
+            <AccountForm />
 
-                <AccountForm />
-            </div>
+            <DecorationSolar2 reverse />
         </div>
     );
 };
