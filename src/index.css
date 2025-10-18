@@ -137,7 +137,10 @@ body {
   }
 }
 
-
 nav .active {
   color: var(--color-primary);
+}
+
+.active > .dashboard-navLink {
+  background-color: #B45C3D;
 }

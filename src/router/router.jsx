@@ -22,6 +22,8 @@ import CheckoutInfoPage from "@/pages/Checkout/CheckoutInfoPage";
 import DeliveryAddressPage from "@/pages/Checkout/DeliveryAddressPage";
 import DeliveryDetailsPage from "@/pages/Checkout/DeliveryDetailsPage";
 import AccountPage from "@/pages/Landing/AccountPage";
+import DashboardLayout from "@/layouts/DashboardLayout";
+import DashboardOverviewPage from "@/pages/Dashboard/DashboardOverviewPage";
 
 const router = createBrowserRouter([
     {
@@ -125,6 +127,17 @@ const router = createBrowserRouter([
                 path: 'delivery-details',
                 Component: DeliveryDetailsPage
             },
+        ]
+    },
+    {
+        path: '/dashboard',
+        Component: DashboardLayout,
+        children: [
+            {
+                index: true,
+                Component: DashboardOverviewPage
+            },
+        
         ]
     },
 ]);

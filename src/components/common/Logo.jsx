@@ -24,6 +24,26 @@ const Logo = ({ className, variant }) => {
     }
 
 
+    if (variant === 'dashboard') {
+        return (
+            <div>
+                <a
+                    href="/"
+                    className={cn(
+                        "flex items-center w-full gap-2 font-bold text-xl text-primary hover:opacity-90 transition-opacity",
+                        className
+                    )}
+                >
+                    <img src={LogoWhite} alt="ReSolaring" className=" w-6" />
+                    <span className="font-semibold text-white">
+                        Resolaring
+                    </span>
+                </a>
+            </div>
+        );
+    }
+
+
     if (variant === 'secondary') {
         return (
             <div>
