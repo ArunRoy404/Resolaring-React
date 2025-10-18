@@ -12,11 +12,13 @@ const DashboardLayout = () => {
 
 
                 <SidebarInset>
-                {/* navbar  */}
-                    <DashboardNavbar/>
+                    {/* navbar  */}
+                    <DashboardNavbar />
 
-                    {/* outlet  */}
-                    <Outlet/>
+                    <div className='p-10'>
+                        {/* outlet  */}
+                        <Outlet />
+                    </div>
                 </SidebarInset>
             </SidebarProvider>
         </div>
