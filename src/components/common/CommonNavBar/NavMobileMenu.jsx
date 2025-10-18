@@ -10,6 +10,7 @@ import {
 import { Menu, X } from "lucide-react"
 import { Link, NavLink } from "react-router"
 import NavButtons from "./NavButtons"
+import Logo from "../Logo"
 
 export default function NavMobileMenu({ navLinks, side='top' }) {
     return (
@@ -19,7 +20,9 @@ export default function NavMobileMenu({ navLinks, side='top' }) {
             </SheetTrigger>
             <SheetContent side={side} className={'z-[1000]'}>
                 <SheetHeader>
-                    <SheetTitle>ReSolaring</SheetTitle>
+                    <SheetTitle>
+                        <Logo variant={'title'}/>
+                    </SheetTitle>
                 </SheetHeader>
 
                 {/* nav links  */}

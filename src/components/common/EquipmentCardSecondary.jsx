@@ -55,7 +55,7 @@ const EquipmentCardSecondary = ({ equipment, setOpenDialog }) => {
                     <h3 className="font-semibold text-sm md:text-lg text-primary">{equipment?.name}</h3>
 
                     {/* description  */}
-                    <p className="text-primary text-[10px] md:text-sm lg:text-base">
+                    <p className="text-primary text-sm lg:text-base">
                         {equipment?.details}
                     </p>
                 </div>

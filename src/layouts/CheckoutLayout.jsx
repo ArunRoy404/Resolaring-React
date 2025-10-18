@@ -35,7 +35,7 @@ const CheckoutLayout = () => {
             >
                 <SectionHeading className={'text-left relative'}>
                     Resolaring.ES CHECKOUT
-                    <p className='lg:absolute font-medium text-sm lg:text-2xl cursor-pointer hover:underline top-0 right-0'>
+                    <p className='lg:absolute mt-2 lg:mt-0 font-medium text-sm lg:text-2xl cursor-pointer hover:underline top-0 right-0'>
                         Continue Browsing
                     </p>
                 </SectionHeading>

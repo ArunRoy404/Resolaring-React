@@ -23,7 +23,7 @@ const EquipmentsSection = () => {
 
             <div className="relative z-20">
                 {/* Equipments Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     {equipments.map((item) => (
                         <EquipmentCard key={item.id} equipment={item} />
                     ))}

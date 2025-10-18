@@ -21,10 +21,10 @@ const NewsletterSection = () => {
 
                 <div className='relative max-w-[800px] mx-auto px-4'
                 >
-                    <h1 className='text-white text-2xl lg:text-6xl text-center font-semibold'>
+                    <h1 className='text-white text-2xl lg:text-6xl md:text-center font-semibold'>
                         Join the community and post your panels
                     </h1>
-                    <p className='text-white text-center text-sm lg:text-lg font-medium mt-4 mb-10'>
+                    <p className='text-white md:text-center text-sm lg:text-lg font-medium mt-4 mb-10'>
                         Subscribe Our Newsletter For Latest Updates
                     </p>
 

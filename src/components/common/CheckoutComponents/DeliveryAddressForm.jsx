@@ -36,10 +36,10 @@ const DeliveryAddressForm = () => {
         <CommonSection>
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className='space-y-6'
+                className='space-y-2 md:space-y-6'
             >
 
-                <div className='flex gap-8'>
+                <div className='space-y-2 md:flex gap-8'>
                     <div className='flex-1'>
                         {/* first name  */}
                         <Label htmlFor='firstName'> First Name*</Label>
@@ -63,7 +63,7 @@ const DeliveryAddressForm = () => {
                 </div>
 
 
-                <div className='flex gap-8'>
+                <div className='space-y-2 md:flex gap-8'>
                     <div className='flex-1'>
                         {/* Phone Number  */}
                         <Label htmlFor='phone'> Phone number*</Label>
@@ -84,7 +84,7 @@ const DeliveryAddressForm = () => {
                                     id="dropdown"
                                     type="button"
                                     variant="outline"
-                                    className={`w-full py-6 justify-between bg-[#F5F6F7] rounded-md px-3 border-white/20 text-left font-normal text-sm shadow-none hover:bg-[#F5F6F7] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring`}
+                                    className={`w-full md:py-6 justify-between bg-[#F5F6F7] rounded-md px-3 border-white/20 text-left font-normal text-sm shadow-none hover:bg-[#F5F6F7] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring`}
                                 >
                                     {selected}
                                     <ChevronDown className="h-4 w-4 opacity-50" />
@@ -106,7 +106,7 @@ const DeliveryAddressForm = () => {
                 </div>
 
 
-                <div className='flex gap-8'>
+                <div className='space-y-2 md:flex gap-8'>
                     <div className='flex-1'>
                         {/* address  */}
                         <Label htmlFor='address'>Address*</Label>
@@ -130,7 +130,7 @@ const DeliveryAddressForm = () => {
                 </div>
 
 
-                <div className='flex gap-8'>
+                <div className='space-y-2 md:flex gap-8'>
                     <div className='flex-1'>
                         {/* state  */}
                         <Label htmlFor='state'> State*</Label>
@@ -156,17 +156,17 @@ const DeliveryAddressForm = () => {
 
 
                 {/* submit  */}
-                <div className='flex  justify-between gap-6'>
+                <div className='space-y-2 md:flex  justify-between gap-6 mt-5 md:mt-0'>
                     <Button
                         size={'lg'}
                         variant={'outline'}
-                        className={'flex-1 py-6'}
+                        className={'flex-1 md:py-6 w-full md:w-auto'}
                     >
                         Use Different Address
                     </Button>
                     <Button
                         size={'lg'}
-                        className={'py-6 border border-secondary flex-1'}
+                        className={'md:py-6 border border-secondary flex-1 w-full md;w-auto'}
                     >
                         Save and Continue
                         <ArrowRight />

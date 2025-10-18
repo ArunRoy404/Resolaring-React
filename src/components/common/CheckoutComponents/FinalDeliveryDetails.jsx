@@ -33,7 +33,7 @@ const FinalDeliveryDetails = () => {
                             id="dropdown"
                             type="button"
                             variant="outline"
-                            className={`w-full py-6 justify-between bg-[#F5F6F7] rounded-md px-3 border-white/20 text-left font-normal text-sm shadow-none hover:bg-[#F5F6F7] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring`}
+                            className={`w-full md:py-6 justify-between bg-[#F5F6F7] rounded-md px-3 border-white/20 text-left font-normal text-sm shadow-none hover:bg-[#F5F6F7] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring`}
                         >
                             {selected}
                             <ChevronDown className="h-4 w-4 opacity-50" />
@@ -55,20 +55,20 @@ const FinalDeliveryDetails = () => {
 
 
             {/* address summary  */}
-            <div className='relative text-[#798090] text-lg space-y-1'>
+            <div className='relative text-[#798090] md:text-lg space-y-1'>
                 <p>Abu Bokkor Siddik</p>
                 <p>Company name</p>
                 <p>demotest@gmail.com</p>
                 <p>mohakhali, Dhaka 1212, Bangladesh</p>
                 <p>+44 20 0000 0000</p>
 
-                <p className='absolute top-0 right-0 text-primary underline cursor-pointer text-lg'>
+                <p className='absolute top-0 right-0 text-primary underline cursor-pointer md:text-lg'>
                     Edit
                 </p>
             </div>
 
             {/* buttons  */}
-            <div className='flex  justify-between gap-6 mt-10'>
+            <div className='md:flex justify-between gap-6 mt-10'>
                 <Link
                 className="w-full"
                     to={'/'}
@@ -87,7 +87,7 @@ const FinalDeliveryDetails = () => {
                 >
                     <Button
                         size={'lg'}
-                        className={'py-6 border border-secondary flex-1 w-full'}
+                        className={'mt-4 md:mt-0 py-6 border border-secondary flex-1 w-full'}
                         onClick={() => toast.success("Order placed successfully.")}
                     >
                         Save and Continue

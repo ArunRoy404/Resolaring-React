@@ -52,7 +52,7 @@ const EquipmentCard = ({ equipment }) => {
                 {/* Price & View Details */}
                 <div className="flex flex-col lg:flex-row justify-between lg:items-center">
                     <div className="flex flex-col">
-                        <span className="text-[#6A7283] text-[10px] md:text-xs">Tax excluded</span>
+                        <span className="text-[#6A7283] text-xs">Tax excluded</span>
                         <span className="text-primary text- lg:text-2xl font-semibold">{equipment.price} €</span>
                     </div>
                     <Link 

@@ -31,7 +31,7 @@ const CartTable = () => {
                         <TableRow key={index} className="border-y border-gray-200 ">
                             {/* Product */}
                             <TableCell className={'py-12'}>
-                                <div className="flex items-center gap-4">
+                                <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
                                     <img src={item.image} alt={item.name} className="w-[40px] md:w-[60px] xl:w-[150px] xl:h-[150px] rounded-md object-cover" />
                                     <span className="font-medium text-xs lg:text-base">{item.name}</span>
                                 </div>

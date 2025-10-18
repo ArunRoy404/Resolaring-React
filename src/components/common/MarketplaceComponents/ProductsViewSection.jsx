@@ -36,9 +36,9 @@ const ProductsViewSection = () => {
 
 
             <div>
-                <div className='flex items-start gap-2 md:gap-6'>
+                <div className='md:flex items-start gap-2 md:gap-6'>
                     {/* filters  */}
-                    <div className='p-2 md:p-6 sticky top-5'>
+                    <div className='p-2 md:p-6 md:sticky md:top-5'>
                         <ProductsFilter />
                     </div>
 

@@ -9,7 +9,7 @@ const StatCard = ({ stat, index }) => {
                     <h3 className="text-2xl md:text-4xl lg:text-5xl text-center font-bold text-brand-primary">
                         <CountUp end={stat.number} duration={2.75} enableScrollSpy /> {stat.label}
                     </h3>
-                    <p className="text-black/50 font-medium text-sm md:text-lg text-left">
+                    <p className="text-black/50 font-medium text-sm md:text-lg text-center">
                         {stat.description}
                     </p>
                 </div>

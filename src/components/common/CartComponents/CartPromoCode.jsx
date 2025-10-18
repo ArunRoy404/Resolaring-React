@@ -5,14 +5,14 @@ import { Button } from '@/components/ui/button';
 
 const CartPromoCode = () => {
     return (
-        <div className='mt-3'>
+        <div className='mt-6 md:mt-3'>
             <p className='flex mb-4 items-center gap-2 text-primary cursor-pointer'>
                 <Tags />
                 <span className='underline'>Enter a promo code</span>
             </p>
 
 
-            <div className='flex items-center justify-between'>
+            <div className='md:flex items-center justify-between space-y-2'>
                 <div className='relative'>
                     <Input placeHolder={'Promo Code'} />
 
@@ -21,7 +21,7 @@ const CartPromoCode = () => {
                     </Button>
                 </div>
                 <div className='h-full'>
-                    <Button className={'bg-brand-primary text-white rounded-xl border border-brand-primary hover:text-primary hover:bg-white py-6'} size={'lg'}>
+                    <Button className={'w-full md:h-auto bg-brand-primary text-white rounded-xl border border-brand-primary hover:text-primary hover:bg-white py-6'} size={'lg'}>
                         <FilePlus />
                         Add a note
                     </Button>

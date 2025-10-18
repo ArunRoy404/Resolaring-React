@@ -24,12 +24,12 @@ const TestimonialSection = () => {
 
 
                 {/* controls  */}
-                <div className='space-x-4 absolute top-0 right-0'>
+                <div className='space-x-4 absolute md:top-0 right-0'>
                     <Button
                         size={"icon"}
                         variant={'outline'}
                         onClick={() => api?.scrollPrev()}
-                        className={'hover:border-white hover:bg-transparent hover:text-white text-black bg-secondary border-secondary'}
+                        className={'hover:border-white w-7 h-7 md:w-8 md:h-8 hover:bg-transparent hover:text-white text-black bg-secondary border-secondary'}
                     >
                         <ArrowLeft />
                     </Button>
@@ -37,7 +37,7 @@ const TestimonialSection = () => {
                         size={"icon"}
                         variant={'outline'}
                         onClick={() => api?.scrollNext()}
-                        className={'hover:border-white hover:bg-transparent hover:text-white text-black bg-secondary border-secondary'}
+                        className={'hover:border-white w-7 h-7 md:w-8 md:h-8 hover:bg-transparent hover:text-white text-black bg-secondary border-secondary'}
                     >
                         <ArrowRight />
                     </Button>

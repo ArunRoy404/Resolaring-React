@@ -34,7 +34,7 @@ const FeatureCard = ({ feature, index }) => {
                     </h1>
 
                     {/* description */}
-                    <p className='text-[#6A7283] text-sm md:text-base'>
+                    <p className='text-[#6A7283] text-base'>
                         {feature?.description}
                     </p>
                 </div>
