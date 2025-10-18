@@ -12,7 +12,7 @@ import { Link, NavLink } from "react-router"
 import NavButtons from "./NavButtons"
 import Logo from "../Logo"
 
-export default function NavMobileMenu({ navLinks, side='top' }) {
+export default function NavMobileMenu({ navLinks, side = 'top' }) {
     return (
         <Sheet>
             <SheetTrigger asChild>
@@ -21,7 +21,7 @@ export default function NavMobileMenu({ navLinks, side='top' }) {
             <SheetContent side={side} className={'z-[1000]'}>
                 <SheetHeader>
                     <SheetTitle>
-                        <Logo variant={'title'}/>
+                        <Logo variant={'title'} />
                     </SheetTitle>
                 </SheetHeader>
 
@@ -33,7 +33,9 @@ export default function NavMobileMenu({ navLinks, side='top' }) {
                             to={link.href}
                             className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                         >
-                            {link.name}
+                            <SheetClose className='w-full h-full text-left'>
+                                {link.name}
+                            </SheetClose>
                         </NavLink>
                     ))}
                 </nav>

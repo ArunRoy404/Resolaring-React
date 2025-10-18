@@ -34,7 +34,7 @@ const CommonBannerSection = ({ image, title, subtitle, button, currentPath }) =>
 
 
                 {/* cta  */}
-                <p className='text-white text-xs lg:text-lg mb-8'>
+                <p className='text-white text-xs md:text-base lg:text-lg mb-8'>
                     {subtitle}
                 </p>
 

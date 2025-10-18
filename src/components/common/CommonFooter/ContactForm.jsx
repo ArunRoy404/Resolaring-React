@@ -37,7 +37,7 @@ const ContactForm = () => {
                     <div
                         className='space-y-6'
                     >
-                        <div className='md:flex space-y-3 items-center justify-between gap-3'>
+                        <div className='md:flex space-y-3 md:space-y-0 items-center justify-between gap-3'>
                             <div className='flex-1'>
                                 <Label htmlFor='name'> Name*</Label>
                                 <Input
@@ -61,7 +61,7 @@ const ContactForm = () => {
                         </div>
 
 
-                        <div className='md:flex space-y-3 items-center justify-between gap-3'>
+                        <div className='md:flex space-y-3 md:space-y-0 items-center justify-between gap-3'>
                             <div className='flex-1'>
                                 <Label htmlFor='telephone'> Telephone*</Label>
                                 <Input

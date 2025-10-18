@@ -17,13 +17,13 @@ const CTASection = () => {
             >
 
                 {/* title  */}
-                <h1 className='md:text-center text-white text-2xl md:text-6xl font-semibold'>
+                <h1 className='md:text-center text-white text-2xl md:w-150 md:mx-auto lg:w-full md:text-3xl xl:text-6xl font-semibold'>
                     Ready to Buy, Sell, or Recycle Solar Equipment?
                 </h1>
 
 
                 {/* cta  */}
-                <p className='md:text-center text-white text-sm md:text-2xl mt-3 mb-6 md::mt-6 md:mb-12 '>
+                <p className='md:text-center text-white text-sm md:text-lg xl:text-2xl mt-3 mb-6 md::mt-6 lg:mb-12 '>
                     Sign up now and start contributing to a greener future.
                 </p>
 

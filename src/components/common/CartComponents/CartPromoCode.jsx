@@ -21,7 +21,7 @@ const CartPromoCode = () => {
                     </Button>
                 </div>
                 <div className='h-full'>
-                    <Button className={'w-full md:h-auto bg-brand-primary text-white rounded-xl border border-brand-primary hover:text-primary hover:bg-white py-6'} size={'lg'}>
+                    <Button className={'w-full md:h-auto bg-brand-primary text-white rounded-xl border border-brand-primary hover:text-primary hover:bg-white py-3'} size={'lg'}>
                         <FilePlus />
                         Add a note
                     </Button>

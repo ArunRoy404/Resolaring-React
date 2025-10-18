@@ -29,13 +29,13 @@ const ProductsViewSection = () => {
         >
             <SectionHeading className={'text-left relative'}>
                 Your market for solar panels
-                <div className="absolute top-0 right-0">
+                <div className="absolute top-20 xl:top-0 right-0">
                     <SearchBar className={"bg-[#F5F6F7]"} />
                 </div>
             </SectionHeading>
 
 
-            <div>
+            <div className='lg:mt-20'>
                 <div className='md:flex items-start gap-2 md:gap-6'>
                     {/* filters  */}
                     <div className='p-2 md:p-6 md:sticky md:top-5'>
@@ -44,9 +44,9 @@ const ProductsViewSection = () => {
 
 
                     {/* Equipments Grid*/}
-                    <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-                        <div className='text-[#6A7283] text-xs lg:text-lg font-medium md:grid-cols-2 lg:col-span-3 py-3 flex items-center justify-between'>
+                        <div className='text-[#6A7283] text-xs md:text-base lg:text-lg font-medium md:grid-cols-2 md:col-span-2  xl:col-span-3 py-3 flex items-center justify-between'>
                             <p>
                                 {equipments?.length} products
                             </p>
@@ -60,7 +60,7 @@ const ProductsViewSection = () => {
                                     value={selectedOption}
                                     onValueChange={(newValue) => setSelectedOption(newValue)}
                                 >
-                                    <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-xs lg:text-lg font-medium">
+                                    <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-xs md:text-base lg:text-lg font-medium">
                                         <SelectValue placeholder="Recommended" />
                                     </SelectTrigger>
                                     <SelectContent>

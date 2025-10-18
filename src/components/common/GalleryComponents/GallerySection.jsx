@@ -27,9 +27,9 @@ const GallerySection = () => {
 
 
                 {/* sort by   */}
-                <div className="absolute  lg:top-0 lg:right-0 flex items-center gap-2 lg:gap-8">
+                <div className="absolute md:top-18  xl:top-0 md:right-0 flex items-center gap-2 lg:gap-8">
                     <div className='flex items-center gap-3'>
-                        <p className="text-sm md:text-lg">
+                        <p className="text-sm  lg:text-lg">
                             Sort By:
                         </p>
 
@@ -37,7 +37,7 @@ const GallerySection = () => {
                             value={selectedOption}
                             onValueChange={(newValue) => setSelectedOption(newValue)}
                         >
-                            <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-sm md:text-lg font-medium">
+                            <SelectTrigger className=" border-none text-[#6A7283] shadow-none text-sm lg:text-lg font-medium">
                                 <SelectValue placeholder="Recommended" />
                             </SelectTrigger>
                             <SelectContent>
@@ -53,7 +53,7 @@ const GallerySection = () => {
                     {/* add media button  */}
                     <Button
                         onClick={() => setOpenDialog('addMedia')}
-                        className={'bg-brand-primary text-white hover:bg-brand-primary/70 text-xs md:text-sm px-2 py-0 md:px-auto md:py-auto'}>
+                        className={'bg-brand-primary text-white hover:bg-brand-primary/70 text-xs lg:text-sm px-2 py-0 md:px-auto md:py-auto'}>
                         Add Media
                     </Button>
 
@@ -63,7 +63,7 @@ const GallerySection = () => {
 
 
             {/* Equipments Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 md:mt-20">
                 {equipments.map((item) => (
                     <EquipmentCardSecondary setOpenDialog={setOpenDialog} key={item.id} equipment={item} />
                 ))}
