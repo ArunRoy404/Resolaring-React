@@ -37,7 +37,7 @@ const SupportForm = () => {
                 className='space-y-6'
             >
 
-                <div className='flex gap-8'>
+                <div className='flex flex-col md:flex-row gap-8'>
                     <div className='flex-1'>
                         {/* name  */}
                         <Label htmlFor='name'> Name*</Label>
