@@ -1,4 +1,5 @@
 import React from 'react';
+import ChangeProfileUrl from '../Dialog/ChangeProfileUrl';
 
 const AccountPrivacyInfo = () => {
     return (
@@ -29,11 +30,7 @@ const AccountPrivacyInfo = () => {
                     >
                         https://www.resolaring.es/en/profile/siddik-bdcalling/profile
                     </p>
-                    <p
-                        className='text-[#6A7283] underline '
-                    >
-                        Edit URL
-                    </p>
+                    <ChangeProfileUrl />
                 </div>
 
 
@@ -48,26 +45,20 @@ const AccountPrivacyInfo = () => {
                     >
                         Hide your profile page, and social aspects of your account.
                     </p>
-                    <p
-                        className='text-[#6A7283] underline '
-                    >
-                        Make Profile Private
-                    </p>
+                    <ChangeProfileUrl />
                 </div>
-
-
                 <div>
                     <p
                         className='text-primary '
                     >
-                      Block Members
+                        Block Members
                     </p>
                     <p
                         className='text-[#6A7283] '
                     >
-                     You haven't blocked anyone.
+                        You haven't blocked anyone.
                     </p>
-            
+
                 </div>
             </div>
 

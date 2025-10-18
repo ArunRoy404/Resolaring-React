@@ -1,4 +1,6 @@
 import React from 'react';
+import ChangeEmailDialog from '../Dialog/ChangeEmailDialog';
+import ChangePasswordDialog from '../Dialog/ChangePasswordDialog';
 
 const AccountLoginInfo = () => {
     return (
@@ -29,11 +31,9 @@ const AccountLoginInfo = () => {
                     >
                         johndoe@gmail.com
                     </p>
-                    <p
-                        className='text-[#6A7283] underline '
-                    >
-                        Change Email
-                    </p>
+
+                    {/* change email dialog  */}
+                    <ChangeEmailDialog />
                 </div>
 
 
@@ -48,11 +48,9 @@ const AccountLoginInfo = () => {
                     >
                         *****************
                     </p>
-                    <p
-                        className='text-[#6A7283] underline '
-                    >
-                        Change Password
-                    </p>
+
+                    {/* change password dialog  */}
+                    <ChangePasswordDialog />
                 </div>
             </div>
 
