@@ -27,6 +27,7 @@ import DashboardOverviewPage from "@/pages/Dashboard/DashboardOverviewPage";
 import NewListing from "@/pages/Dashboard/NewListing";
 import WithdrawPage from "@/pages/Dashboard/Withdrawpage";
 import ManageListing from "@/pages/Dashboard/ManageListing";
+import OrderList from "@/pages/Dashboard/OrderList";
 
 const router = createBrowserRouter([
     {
@@ -139,6 +140,11 @@ const router = createBrowserRouter([
             {
                 index: true,
                 Component: DashboardOverviewPage,
+                loader: () => fetch('/orders.json')
+            },
+            {
+                path: 'order-list',
+                Component: OrderList,
                 loader: () => fetch('/orders.json')
             },
             {

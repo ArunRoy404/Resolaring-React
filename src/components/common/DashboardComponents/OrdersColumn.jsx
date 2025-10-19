@@ -36,7 +36,6 @@ const OrdersColumn = [
         header: () => <div className="text-white text-center">Order Date</div>,
         cell: ({ row }) => {
             const date = new Date(row?.original?.orderDate)
-            console.log(date);
             return (
                 <div className="capitalize text-center">{date.toLocaleDateString('en-US')}</div>
             )
