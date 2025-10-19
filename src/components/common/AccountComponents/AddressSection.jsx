@@ -1,7 +1,7 @@
 import React from 'react';
-import ChangeEmailDialog from '../Dialog/ChangeEmailDialog';
-import ChangePasswordDialog from '../Dialog/ChangePasswordDialog';
 import EditAddressDialog from '../Dialog/EditAddressDialog';
+import { CheckCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const AddressSection = () => {
     return (
@@ -53,17 +53,33 @@ const AddressSection = () => {
 
 
                     {/* dialogs  */}
-                    <div className='flex items-center gap-12'>
-                        <EditAddressDialog />
-                        <p className='text-primary underline cursor-pointer '>
-                            Remove
+                    <div className='flex items-center justify-between gap-12'>
+                        <div className='flex items-center gap-12'>
+                            <EditAddressDialog />
+                            <p className='text-primary underline cursor-pointer '>
+                                Remove
+                            </p>
+                        </div>
+
+                        <p className='flex items-center gap-4'>
+                            <CheckCircle color='green' />
+                            <span className='text-[#6A7283]'>Default Address</span>
                         </p>
                     </div>
                 </div>
             </div>
 
 
-            <div>
+            <div className='max-w-max mx-auto text-center space-y-6 mt-12'>
+                <p className='text-2xl'>You haven't saved any addresses yet.</p>
+        
+                <Button
+                    size={'lg'}
+                    className={'bg-brand-primary text-white hover:bg-white hover:text-black border border-brand-primary'}
+                >
+                    Add New Address
+                </Button>
+
             </div>
         </div>
     );
