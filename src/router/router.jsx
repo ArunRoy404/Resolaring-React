@@ -28,6 +28,7 @@ import NewListing from "@/pages/Dashboard/NewListing";
 import WithdrawPage from "@/pages/Dashboard/WithdrawPage";
 import ManageListing from "@/pages/Dashboard/ManageListing";
 import OrderList from "@/pages/Dashboard/OrderList";
+import AccountSetting from "@/pages/Dashboard/AccountSetting";
 
 const router = createBrowserRouter([
     {
@@ -160,6 +161,10 @@ const router = createBrowserRouter([
                 path: '/dashboard/manage-listing',
                 Component: ManageListing,
                 loader: () => fetch('/listings.json')
+            },
+            {
+                path: '/dashboard/setting',
+                Component: AccountSetting,
             },
         ]
     },
