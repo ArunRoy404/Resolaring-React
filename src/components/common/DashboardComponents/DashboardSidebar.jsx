@@ -14,7 +14,7 @@ const navLink = [
     },
     {
         icon: Clipboard,
-        label: "OveAdd New Listingrview",
+        label: "Add New Listing",
         path: "/dashboard/add-listing",
     },
     {

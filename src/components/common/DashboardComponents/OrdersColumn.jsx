@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import * as React from "react"
 import { Link } from "react-router";
+import OrderDetailsDialog from "../Dialog/OrderDetailsDialog";
 
 
 const OrdersColumn = [
@@ -51,9 +52,9 @@ const OrdersColumn = [
                     <Button
                         variant={'outline'}
                         className={`text-center w-[126px] 
-                            ${status === 'pending' ? '!border-secondary text-secondary' 
-                                : status === 'shipped' ? "border-brand-primary text-brand-primary" 
-                                : status === 'completed' ? 'border-green-600 text-green-600' : ''
+                            ${status === 'pending' ? '!border-secondary text-secondary'
+                                : status === 'shipped' ? "border-brand-primary text-brand-primary"
+                                    : status === 'completed' ? 'border-green-600 text-green-600' : ''
                             }`}
                     >
                         {status}
@@ -65,13 +66,7 @@ const OrdersColumn = [
     {
         accessorKey: "action",
         header: () => <div className="text-white text-center">Action</div>,
-        cell: ({ row }) => (
-            <div className="capitalize text-center">
-                <Link to={`/orders/${row?.original?.id.slice(1)}`} className="underline text-brand-primary">
-                    View Details
-                </Link>
-            </div>
-        ),
+        cell: () => <OrderDetailsDialog />
     },
 ]
 

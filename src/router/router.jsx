@@ -24,6 +24,7 @@ import DeliveryDetailsPage from "@/pages/Checkout/DeliveryDetailsPage";
 import AccountPage from "@/pages/Landing/AccountPage";
 import DashboardLayout from "@/layouts/DashboardLayout";
 import DashboardOverviewPage from "@/pages/Dashboard/DashboardOverviewPage";
+import NewListing from "@/pages/Dashboard/NewListing";
 
 const router = createBrowserRouter([
     {
@@ -137,6 +138,10 @@ const router = createBrowserRouter([
                 index: true,
                 Component: DashboardOverviewPage,
                 loader: () => fetch('/orders.json')
+            },
+            {
+                path: '/dashboard/add-listing',
+                Component: NewListing,
             },
 
         ]
