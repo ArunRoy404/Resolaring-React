@@ -26,6 +26,7 @@ import DashboardLayout from "@/layouts/DashboardLayout";
 import DashboardOverviewPage from "@/pages/Dashboard/DashboardOverviewPage";
 import NewListing from "@/pages/Dashboard/NewListing";
 import WithdrawPage from "@/pages/Dashboard/Withdrawpage";
+import ManageListing from "@/pages/Dashboard/ManageListing";
 
 const router = createBrowserRouter([
     {
@@ -148,6 +149,11 @@ const router = createBrowserRouter([
                 path: '/dashboard/withdraw',
                 Component: WithdrawPage,
                 loader: () => fetch('/earningList.json')
+            },
+            {
+                path: '/dashboard/manage-listing',
+                Component: ManageListing,
+                loader: () => fetch('/listings.json')
             },
         ]
     },
