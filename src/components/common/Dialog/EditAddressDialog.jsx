@@ -25,17 +25,16 @@ export function EditAddressDialog() {
                         Edit
                     </p>
                 </DialogTrigger>
-                <DialogContent className="!max-w-none w-auto z-[200]">
+                <DialogContent className="!max-w-none w-[800px] z-[200]">
                     <DialogHeader>
                         <DialogTitle>Add New Address</DialogTitle>
                     </DialogHeader>
 
 
-
                     {/* form  */}
                     <div className=" border-t py-8 space-y-4">
                         <div className="flex items-center gap-8">
-                            <div className="grid gap-2">
+                            <div className="grid gap-2 flex-1">
                                 <Label htmlFor="firstName">First Name*</Label>
                                 <Input
                                     id='firstName'
@@ -43,7 +42,7 @@ export function EditAddressDialog() {
                                     placeHolder='john'
                                 />
                             </div>
-                            <div className="grid gap-2">
+                            <div className="grid gap-2 flex-1">
                                 <Label htmlFor="lastName">last Name*</Label>
                                 <Input
                                     id='lastName'
@@ -110,7 +109,7 @@ export function EditAddressDialog() {
 
 
                         <div className="flex items-center gap-8">
-                            <div className="grid gap-2">
+                            <div className="grid gap-2  flex-1">
                                 <Label htmlFor="zip">Zip / Postal code</Label>
                                 <Input
                                     id='zip'
@@ -118,7 +117,7 @@ export function EditAddressDialog() {
                                     placeHolder='1234'
                                 />
                             </div>
-                            <div className="grid gap-2">
+                            <div className="grid gap-2  flex-1">
                                 <Label htmlFor="phone">Phone</Label>
                                 <Input
                                     id='phone'

@@ -2,6 +2,7 @@ import React from 'react';
 import EditAddressDialog from '../Dialog/EditAddressDialog';
 import { CheckCircle, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import EditPaymentDialog from '../Dialog/EditPaymentDialog';
 
 const WalletSection = () => {
     return (
@@ -55,7 +56,7 @@ const WalletSection = () => {
                     {/* dialogs  */}
                     <div className='flex items-center justify-between gap-12'>
                         <div className='flex items-center gap-12'>
-                            <EditAddressDialog />
+                            <EditPaymentDialog />
                             <p className='text-primary underline cursor-pointer '>
                                 Remove
                             </p>
