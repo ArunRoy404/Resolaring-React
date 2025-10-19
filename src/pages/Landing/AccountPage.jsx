@@ -1,14 +1,3 @@
-import { Button } from "@/components/ui/button"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
     Tabs,
     TabsContent,
@@ -27,29 +16,31 @@ export function AccountPage() {
 
                 {/* tabs  */}
                 <Tabs defaultValue="account">
-                    <TabsList
-                        className={'bg-transparent'}
-                    >
-                        <TabsTrigger
-                            className={'px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
-                            value="account"
-                        >Account
-                        </TabsTrigger>
+                    <div className="border-b-2">
+                        <TabsList
+                            className={'bg-transparent'}
+                        >
+                            <TabsTrigger
+                                className={'cursor-pointer px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
+                                value="account"
+                            >Account
+                            </TabsTrigger>
 
 
-                        <TabsTrigger
-                            className={'px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
-                            value="address">
-                            Address
-                        </TabsTrigger>
+                            <TabsTrigger
+                                className={'cursor-pointer px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
+                                value="address">
+                                Address
+                            </TabsTrigger>
 
 
-                        <TabsTrigger
-                            className={'px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
-                            value="wallet">
-                            Wallet
-                        </TabsTrigger>
-                    </TabsList>
+                            <TabsTrigger
+                                className={'cursor-pointer px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
+                                value="wallet">
+                                Wallet
+                            </TabsTrigger>
+                        </TabsList>
+                    </div>
 
 
 
