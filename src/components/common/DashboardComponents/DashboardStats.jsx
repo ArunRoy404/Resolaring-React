@@ -40,7 +40,9 @@ const DashboardStats = () => {
             {
                 stats?.map((stat, index) => {
                     return (
-                        <div className='p-6 rounded-2xl'
+                        <div 
+                        key={index}
+                        className='p-6 rounded-2xl'
                         style={{backgroundColor: bg[index]}}
                         >
                             <p className='text-[#6A7283] font-medium text-2xl'>{stat?.label}</p>

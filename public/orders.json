@@ -1,0 +1,82 @@
+[
+  {
+    "id": "#10001",
+    "buyerImage": "https://randomuser.me/api/portraits/men/12.jpg",
+    "buyerName": "Arun Roy",
+    "productName": "Wireless Headphones",
+    "orderDate": "2025-10-10",
+    "status": "pending"
+  },
+  {
+    "id": "#10002",
+    "buyerImage": "https://randomuser.me/api/portraits/women/22.jpg",
+    "buyerName": "Sophia Ahmed",
+    "productName": "Smartwatch Pro X",
+    "orderDate": "2025-10-11",
+    "status": "shipped"
+  },
+  {
+    "id": "#10003",
+    "buyerImage": "https://randomuser.me/api/portraits/men/32.jpg",
+    "buyerName": "Rifat Hasan",
+    "productName": "Bluetooth Speaker",
+    "orderDate": "2025-10-13",
+    "status": "completed"
+  },
+  {
+    "id": "#10004",
+    "buyerImage": "https://randomuser.me/api/portraits/women/25.jpg",
+    "buyerName": "Maya Sultana",
+    "productName": "Gaming Mouse",
+    "orderDate": "2025-10-14",
+    "status": "pending"
+  },
+  {
+    "id": "#10005",
+    "buyerImage": "https://randomuser.me/api/portraits/men/45.jpg",
+    "buyerName": "Tanvir Islam",
+    "productName": "Mechanical Keyboard",
+    "orderDate": "2025-10-15",
+    "status": "shipped"
+  },
+  {
+    "id": "#10006",
+    "buyerImage": "https://randomuser.me/api/portraits/men/12.jpg",
+    "buyerName": "Arun Roy",
+    "productName": "Wireless Headphones",
+    "orderDate": "2025-10-10",
+    "status": "pending"
+  },
+  {
+    "id": "#10007",
+    "buyerImage": "https://randomuser.me/api/portraits/women/22.jpg",
+    "buyerName": "Sophia Ahmed",
+    "productName": "Smartwatch Pro X",
+    "orderDate": "2025-10-11",
+    "status": "shipped"
+  },
+  {
+    "id": "#10008",
+    "buyerImage": "https://randomuser.me/api/portraits/men/32.jpg",
+    "buyerName": "Rifat Hasan",
+    "productName": "Bluetooth Speaker",
+    "orderDate": "2025-10-13",
+    "status": "completed"
+  },
+  {
+    "id": "#10009",
+    "buyerImage": "https://randomuser.me/api/portraits/women/25.jpg",
+    "buyerName": "Maya Sultana",
+    "productName": "Gaming Mouse",
+    "orderDate": "2025-10-14",
+    "status": "pending"
+  },
+  {
+    "id": "#10010",
+    "buyerImage": "https://randomuser.me/api/portraits/men/45.jpg",
+    "buyerName": "Tanvir Islam",
+    "productName": "Mechanical Keyboard",
+    "orderDate": "2025-10-15",
+    "status": "shipped"
+  }
+]

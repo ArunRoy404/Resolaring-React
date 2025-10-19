@@ -135,9 +135,10 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component: DashboardOverviewPage
+                Component: DashboardOverviewPage,
+                loader: () => fetch('/orders.json')
             },
-        
+
         ]
     },
 ]);

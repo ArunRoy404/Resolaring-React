@@ -49,7 +49,7 @@ const DashboardSidebar = () => {
                     navLink?.map(link => {
                         const { label, icon: Icon, path} = link
                         return (
-                            <NavLink to={path}>
+                            <NavLink to={path} key={path}>
                                 <button
                                     className={'pl-10 py-4 dashboard-navLink hover:bg-brand-primary w-full text-white text-sm  text-left flex items-center gap-2 cursor-pointer'}
                                 >
