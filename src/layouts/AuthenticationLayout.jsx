@@ -1,7 +1,6 @@
 import { Outlet } from "react-router";
 import authImage from "@/assets/Images/authImage.svg"
 import AOS from 'aos';
-import Lenis from 'lenis';
 import { useEffect } from "react";
 
 export default function AuthenticationLayout() {
@@ -10,15 +9,7 @@ export default function AuthenticationLayout() {
             duration: 1000,
             once: false,
             offset: 100,
-        });
-
-        const lenis = new Lenis({
-            autoRaf: true,
-        });
-
-        return () => {
-            lenis.destroy()
-        }
+        })
     })
 
 

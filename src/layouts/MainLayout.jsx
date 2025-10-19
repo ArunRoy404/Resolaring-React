@@ -5,7 +5,6 @@ import { Outlet } from 'react-router';
 import NavBar from '../shared/NavBar';
 import Footer from '@/shared/Footer';
 import TopBar from '@/shared/TopBar';
-import Lenis from 'lenis';
 
 const MainLayout = () => {
     useEffect(() => {
@@ -13,16 +12,7 @@ const MainLayout = () => {
             duration: 1000,
             once: false,
             offset: 100,
-        });
-
-        const lenis = new Lenis({
-            autoRaf: true,
-        });
-
-        return () => {
-            lenis.destroy()
-        }
-
+        })
     }, []);
 
     return (

@@ -7,7 +7,6 @@ import TopBar from '@/shared/TopBar';
 import React, { useEffect } from 'react';
 import { Outlet } from 'react-router';
 import AOS from 'aos';
-import Lenis from 'lenis';
 
 const CheckoutLayout = () => {
     useEffect(() => {
@@ -16,15 +15,6 @@ const CheckoutLayout = () => {
             once: false,
             offset: 100,
         });
-
-        const lenis = new Lenis({
-            autoRaf: true,
-        });
-
-        return () => {
-            lenis.destroy()
-        }
-
     }, []);
 
     return (
