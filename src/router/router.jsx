@@ -25,7 +25,7 @@ import AccountPage from "@/pages/Landing/AccountPage";
 import DashboardLayout from "@/layouts/DashboardLayout";
 import DashboardOverviewPage from "@/pages/Dashboard/DashboardOverviewPage";
 import NewListing from "@/pages/Dashboard/NewListing";
-import WithdrawPage from "@/pages/Dashboard/Withdrawpage";
+import WithdrawPage from "@/pages/Dashboard/WithdrawPage";
 import ManageListing from "@/pages/Dashboard/ManageListing";
 import OrderList from "@/pages/Dashboard/OrderList";
 
