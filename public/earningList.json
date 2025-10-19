@@ -1,0 +1,72 @@
+[
+    {
+        "id": "#10001",
+        "withdrawAmount": 150,
+        "requestDate": "2025-10-16",
+        "status": "pending",
+        "action": "Approve"
+    },
+    {
+        "id": "#10002",
+        "withdrawAmount": 200,
+        "requestDate": "2025-10-17",
+        "status": "completed",
+        "action": "View"
+    },
+    {
+        "id": "#10003",
+        "withdrawAmount": 120,
+        "requestDate": "2025-10-18",
+        "status": "pending",
+        "action": "Approve"
+    },
+    {
+        "id": "#10004",
+        "withdrawAmount": 900,
+        "requestDate": "2025-10-19",
+        "status": "completed",
+        "action": "View"
+    },
+    {
+        "id": "#10005",
+        "withdrawAmount": 250,
+        "requestDate": "2025-10-20",
+        "status": "pending",
+        "action": "Approve"
+    },
+    {
+        "id": "#10006",
+        "withdrawAmount": 150,
+        "requestDate": "2025-10-16",
+        "status": "pending",
+        "action": "Approve"
+    },
+    {
+        "id": "#10007",
+        "withdrawAmount": 200,
+        "requestDate": "2025-10-17",
+        "status": "completed",
+        "action": "View"
+    },
+    {
+        "id": "#10008",
+        "withdrawAmount": 120,
+        "requestDate": "2025-10-18",
+        "status": "pending",
+        "action": "Approve"
+    },
+    {
+        "id": "#10009",
+        "withdrawAmount": 900,
+        "requestDate": "2025-10-19",
+        "status": "completed",
+        "action": "View"
+    },
+    {
+        "id": "#10010",
+        "withdrawAmount": 250,
+        "requestDate": "2025-10-20",
+        "status": "pending",
+        "action": "Approve"
+    }
+]

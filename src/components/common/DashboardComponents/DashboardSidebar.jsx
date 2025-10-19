@@ -32,6 +32,11 @@ const navLink = [
         label: "Account Settings",
         path: "/dashboard/setting",
     },
+    {
+        icon: UserPen,
+        label: "Withdraw",
+        path: "/dashboard/withdraw",
+    },
 ]
 
 const DashboardSidebar = () => {
@@ -47,7 +52,17 @@ const DashboardSidebar = () => {
             <SidebarContent className={'bg-primary'} >
                 {
                     navLink?.map(link => {
-                        const { label, icon: Icon, path} = link
+                        const { label, icon: Icon, path } = link
+                        if (path === '/dashboard') {
+                            return <NavLink to={path} key={path} end>
+                                <button
+                                    className={'pl-10 py-4 dashboard-navLink hover:bg-brand-primary w-full text-white text-sm  text-left flex items-center gap-2 cursor-pointer'}
+                                >
+                                    <Icon />
+                                    {label}
+                                </button>
+                            </NavLink>
+                        }
                         return (
                             <NavLink to={path} key={path}>
                                 <button
