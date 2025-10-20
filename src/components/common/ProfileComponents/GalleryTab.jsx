@@ -6,28 +6,31 @@ import {
 } from "@/components/ui/tabs"
 import ProfileTabSection from "./ProfileTabSection"
 import ProfileGallerySection from "./ProfileGallerySection"
+import GalleryUploadSection from "./GalleryUploadSection";
 
-export function ProfileTab() {
+
+
+export function GalleryTab() {
     return (
         <div className="flex-col gap-6 py-8">
 
             {/* tabs  */}
-            <Tabs defaultValue="profile">
+            <Tabs defaultValue="upload">
                 <div className="border-b-2">
                     <TabsList
                         className={'bg-transparent translate-y-1'}
                     >
                         <TabsTrigger
                             className={'cursor-pointer px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
-                            value="profile"
-                        >Profile
+                            value="upload"
+                        >Upload
                         </TabsTrigger>
 
 
                         <TabsTrigger
                             className={'cursor-pointer px-10 data-[state=active]:border-b-brand-primary rounded-none border-3 !shadow-none'}
-                            value="gallery">
-                            Gallery
+                            value="likes">
+                            Likes
                         </TabsTrigger>
                     </TabsList>
                 </div>
@@ -35,18 +38,18 @@ export function ProfileTab() {
 
 
                 {/* tab contents  */}
-                <TabsContent value="profile">
-                    <ProfileTabSection />
+                <TabsContent value="upload">
+                    <GalleryUploadSection />
                 </TabsContent>
 
 
 
-                <TabsContent value="gallery">
-                    <ProfileGallerySection />
+                <TabsContent value="likes">
+
                 </TabsContent>
             </Tabs>
         </div>
     )
 }
 
-export default ProfileTab;
+export default GalleryTab;
