@@ -9,6 +9,7 @@ import ReviewPage from "@/pages/Landing/ReviewPage";
 import SupportPage from "@/pages/Landing/SupportPage";
 import AccountPage from "@/pages/Landing/AccountPage";
 import OrdersPage from "@/pages/Landing/OrdersPage";
+import ProfilePage from "@/pages/Landing/ProfilePage";
 
 const mainRoutes = {
     path: "/",
@@ -56,6 +57,10 @@ const mainRoutes = {
         {
             path: '/orders',
             Component: OrdersPage,
+        },
+        {
+            path: '/profile',
+            Component: ProfilePage,
         },
     ]
 }

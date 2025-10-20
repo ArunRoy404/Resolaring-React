@@ -9,7 +9,7 @@ const Logo = ({ className, variant }) => {
         return (
             <div>
                 <Link
-                    href="/"
+                    to="/"
                     className={cn(
                         "flex items-center w-full gap-2 font-bold text-xl text-primary hover:opacity-90 transition-opacity",
                         className
@@ -29,7 +29,7 @@ const Logo = ({ className, variant }) => {
         return (
             <div>
                 <Link
-                    href="/"
+                    to="/"
                     className={cn(
                         "flex items-center w-full gap-2 font-bold text-xl text-primary hover:opacity-90 transition-opacity",
                         className
@@ -49,7 +49,7 @@ const Logo = ({ className, variant }) => {
         return (
             <div>
                 <Link
-                    href="/"
+                    to="/"
                     className={cn(
                         "flex items-center w-full gap-2 md:gap-4 font-bold text-xl text-primary hover:opacity-90 transition-opacity",
                         className
@@ -71,7 +71,7 @@ const Logo = ({ className, variant }) => {
     return (
         <div>
             <Link
-                href="/"
+                to="/"
                 className={cn(
                     "flex items-center w-full gap-2 md:gap-4 font-bold text-xl text-primary hover:opacity-90 transition-opacity",
                     className
