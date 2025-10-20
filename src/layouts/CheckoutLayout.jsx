@@ -5,7 +5,7 @@ import SectionHeading from '@/components/common/SectionHeading';
 import { Separator } from '@/components/ui/separator';
 import TopBar from '@/shared/TopBar';
 import React, { useEffect } from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, ScrollRestoration } from 'react-router';
 import AOS from 'aos';
 
 const CheckoutLayout = () => {
@@ -19,6 +19,7 @@ const CheckoutLayout = () => {
 
     return (
         <main>
+            <ScrollRestoration />
             <TopBar />
             <CommonSection
                 className={'!overflow-visible'}

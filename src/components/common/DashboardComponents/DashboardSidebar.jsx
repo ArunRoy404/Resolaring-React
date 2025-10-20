@@ -10,7 +10,7 @@ const navLink = [
     {
         icon: ChartArea,
         label: "Overview",
-        path: "/dashboard",
+        path: "/dashboard/overview",
     },
     {
         icon: Clipboard,
@@ -41,7 +41,7 @@ const navLink = [
 
 const DashboardSidebar = () => {
     return (
-        <Sidebar>
+        <Sidebar className={'z-[200]'}>
             {/* header  */}
             <SidebarHeader className={'bg-primary px-10 py-6'}>
                 <Logo variant={'dashboard'} />
@@ -49,7 +49,7 @@ const DashboardSidebar = () => {
 
 
             {/* nav link  */}
-            <SidebarContent className={'bg-primary'} >
+            <SidebarContent className={'bg-primary gap-0'} >
                 {
                     navLink?.map(link => {
                         const { label, icon: Icon, path } = link

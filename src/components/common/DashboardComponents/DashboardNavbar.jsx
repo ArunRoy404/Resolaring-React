@@ -7,7 +7,7 @@ import avatar from "@/assets/Images/avatarBig.svg"
 
 const DashboardNavbar = () => {
     return (
-        <div className='flex items-center justify-between p-10'>
+        <div className='z-[100] sticky top-0 backdrop-blur-xl flex items-center justify-between p-10'>
             <div className='flex items-center gap-2'>
                 <SidebarTrigger className={'scale-150'} />
                 <h1 className='text-primary text-4xl font-semibold'>Overview</h1>

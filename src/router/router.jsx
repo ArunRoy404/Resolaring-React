@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
 import MainLayout from "@/layouts/MainLayout";
 import HomePage from "@/pages/Landing/HomePage";
 import AuthenticationLayout from "@/layouts/AuthenticationLayout";
@@ -29,6 +29,7 @@ import WithdrawPage from "@/pages/Dashboard/WithdrawPage";
 import ManageListing from "@/pages/Dashboard/ManageListing";
 import OrderList from "@/pages/Dashboard/OrderList";
 import AccountSetting from "@/pages/Dashboard/AccountSetting";
+import OrdersPage from "@/pages/Landing/OrdersPage";
 
 const router = createBrowserRouter([
     {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
             {
                 path: '/account',
                 Component: AccountPage,
+            },
+            {
+                path: '/orders',
+                Component: OrdersPage,
             },
         ]
     },
@@ -140,6 +145,10 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
+                element: <Navigate to={'/dashboard/overview'} />,
+            },
+            {
+                path: 'overview',
                 Component: DashboardOverviewPage,
                 loader: () => fetch('/orders.json')
             },
@@ -149,21 +158,21 @@ const router = createBrowserRouter([
                 loader: () => fetch('/orders.json')
             },
             {
-                path: '/dashboard/add-listing',
+                path: 'add-listing',
                 Component: NewListing,
             },
             {
-                path: '/dashboard/withdraw',
+                path: 'withdraw',
                 Component: WithdrawPage,
                 loader: () => fetch('/earningList.json')
             },
             {
-                path: '/dashboard/manage-listing',
+                path: 'manage-listing',
                 Component: ManageListing,
                 loader: () => fetch('/listings.json')
             },
             {
-                path: '/dashboard/setting',
+                path: 'setting',
                 Component: AccountSetting,
             },
         ]

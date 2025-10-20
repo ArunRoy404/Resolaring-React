@@ -2,11 +2,12 @@ import DashboardNavbar from '@/components/common/DashboardComponents/DashboardNa
 import DashboardSidebar from '@/components/common/DashboardComponents/DashboardSidebar';
 import { SidebarInset, SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import React from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, ScrollRestoration } from 'react-router';
 
 const DashboardLayout = () => {
     return (
         <div>
+            <ScrollRestoration />
             <SidebarProvider>
                 <DashboardSidebar />
 
