@@ -106,16 +106,15 @@ export function DashboardTable({ data, columns }) {
                                 </TableCell>
                             </TableRow>
                         )}
-
-                        {
-                            isLoading &&
-                            <div className="absolute h-full w-full top-0 flex items-center justify-center backdrop-blur-sm">
-                                <Loader />
-                            </div>
-                        }
                     </TableBody>
-                </Table>
 
+                    {
+                        isLoading &&
+                        <div className="absolute h-full w-full top-0 flex items-center justify-center backdrop-blur-xs">
+                            <Loader />
+                        </div>
+                    }
+                </Table>
 
             </div>
 
