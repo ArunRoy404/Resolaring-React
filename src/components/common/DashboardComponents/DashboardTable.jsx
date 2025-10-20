@@ -2,11 +2,9 @@ import {
     flexRender,
     getCoreRowModel,
     getFilteredRowModel,
-    getPaginationRowModel,
     getSortedRowModel,
     useReactTable,
 } from "@tanstack/react-table"
-import { Button } from "@/components/ui/button"
 import {
     Table,
     TableBody,
@@ -15,20 +13,45 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import { Pagination } from "@/components/ui/pagination"
 import DashboardPagination from "./DashboardPagination"
+import { useEffect, useState } from "react"
+import Loader from "../Loader"
 
 
 export function DashboardTable({ data, columns }) {
-
+    const [selectedData, setSelectedData] = useState([...data].slice(0, 10))
+    const [pagination, setPagination] = useState({
+        currentIndex: 0,
+        pageSize: 10
+    })
     const table = useReactTable({
-        data,
+        data: selectedData,
         columns,
         getCoreRowModel: getCoreRowModel(),
-        getPaginationRowModel: getPaginationRowModel(),
         getSortedRowModel: getSortedRowModel(),
         getFilteredRowModel: getFilteredRowModel(),
     })
+    const [isLoading, setIsLoading] = useState(false)
+
+
+    useEffect(() => {
+        const pageSize = pagination.pageSize
+        const currentIndex = pagination.currentIndex
+
+        const startFrom = currentIndex * pageSize
+        const end = startFrom + pageSize
+
+        const newData = [...data].slice(startFrom, end)
+
+
+        setIsLoading(true)
+        setTimeout(() => {
+            setSelectedData(newData)
+            setIsLoading(false)
+        }, [1000])
+
+
+    }, [pagination, data])
 
 
     return (
@@ -56,7 +79,7 @@ export function DashboardTable({ data, columns }) {
 
 
 
-                    <TableBody>
+                    <TableBody className={'relative'}>
                         {table.getRowModel().rows?.length ? (
                             table.getRowModel().rows.map((row) => (
                                 <TableRow
@@ -83,14 +106,29 @@ export function DashboardTable({ data, columns }) {
                                 </TableCell>
                             </TableRow>
                         )}
+
+                        {
+                            isLoading &&
+                            <div className="absolute h-full w-full top-0 flex items-center justify-center backdrop-blur-sm">
+                                <Loader />
+                            </div>
+                        }
                     </TableBody>
                 </Table>
+
+
             </div>
 
 
+
+
             {/* pagination  */}
-            <div className="py-8 "> 
-                <DashboardPagination />
+            <div className="py-8">
+                <DashboardPagination
+                    pagination={pagination}
+                    setPagination={setPagination}
+                    length={data.length}
+                />
             </div>
         </div>
     )

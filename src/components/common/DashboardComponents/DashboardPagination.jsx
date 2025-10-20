@@ -6,42 +6,77 @@ import {
 } from "@/components/ui/pagination"
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export function DashboardPagination() {
+export function DashboardPagination({ setPagination, pagination, length }) {
+
+    const { pageSize, currentIndex } = pagination
+    const totalPage = Math.ceil(length / pageSize)
+    const previousIndex = Math.max(0, currentIndex - 1)
+    const nextIndex = Math.min(totalPage, currentIndex + 1)
+
+    const numberOfButtons = Math.min(4, totalPage)
+    // const startingButton = Math.max(0, currentIndex - 2)
+
+
+
     return (
         <Pagination className={'max-w-max mx-0 '}>
             <PaginationContent>
                 <PaginationItem>
-                    <PaginationLink href="#" className={'rounded border border-gray-300'}>
+                    <PaginationLink
+                        onClick={() => setPagination({ ...pagination, currentIndex: previousIndex })}
+                        className={'rounded border border-gray-300'}>
                         <ChevronLeft />
                     </PaginationLink>
                 </PaginationItem>
+
+
+
+                {
+                    currentIndex > 2
+                        ?
+                        <PaginationItem>
+                            <PaginationLink className={'rounded border border-gray-300'}>
+                                ...
+                            </PaginationLink>
+                        </PaginationItem>
+                        : <></>
+                }
+
+
+
+                {
+                    [...new Array(numberOfButtons)].map((_, index) => {
+                        return (
+                            <PaginationItem key={index}>
+                                <PaginationLink
+                                    onClick={() => setPagination({ ...pagination, currentIndex: index })}
+                                    className={`rounded border ${index === currentIndex ? ' bg-brand-primary text-white border-brand-primary' : 'border-gray-300 '}`}
+                                >
+                                    {index + 1}
+                                </PaginationLink>
+                            </PaginationItem>
+                        )
+                    })
+                }
+
+
+                {
+                    // totalPage - currentIndex - 1 > 2
+                    //     ?
+                    //     <PaginationItem>
+                    //         <PaginationLink className={'rounded border border-gray-300'}>
+                    //             ...
+                    //         </PaginationLink>
+                    //     </PaginationItem>
+
+
+                    //     : <></>
+                }
                 <PaginationItem>
-                    <PaginationLink href="#" className={'rounded border border-gray-300'}>
-                        1
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#" className={'rounded border border-gray-300'}>
-                        2
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#" isActive className={'rounded bg-brand-primary text-white border-brand-primary'}>
-                        3
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#" className={'rounded border border-gray-300'}>
-                        4
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#" className={'rounded border border-gray-300'}>
-                        ...
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#" className={'rounded border border-gray-300'}>
+                    <PaginationLink
+                        onClick={() => setPagination({ ...pagination, currentIndex: nextIndex })}
+                        className={'rounded border border-gray-300'}
+                    >
                         <ChevronRight />
                     </PaginationLink>
                 </PaginationItem>
