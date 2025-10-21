@@ -4,6 +4,7 @@ import { SidebarInset, SidebarProvider, SidebarTrigger } from '@/components/ui/s
 import React from 'react';
 import { Outlet, ScrollRestoration } from 'react-router';
 
+
 const DashboardLayout = () => {
     return (
         <div>
@@ -16,7 +17,7 @@ const DashboardLayout = () => {
                     {/* navbar  */}
                     <DashboardNavbar />
 
-                    <div className='p-10'>
+                    <div className='p-10 h-[calc(100vh-128px)] overflow-auto'>
                         {/* outlet  */}
                         <Outlet />
                     </div>

@@ -13,7 +13,11 @@ const ManageListing = () => {
                 Listing
             </DashboardHeader>
 
-            <DashboardTable columns={DashboardListingsColumns} data={listings} />
+            <DashboardTable
+                columns={DashboardListingsColumns}
+                data={listings}
+                isPagination
+            />
         </div>
     );
 };

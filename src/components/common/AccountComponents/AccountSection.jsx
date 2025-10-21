@@ -4,10 +4,12 @@ import AccountForm from './AccountForm';
 import DecorationSolar2 from '../Decoration/DecorationSolar2';
 import AccountLoginInfo from './AccountLoginInfo';
 import AccountPrivacyInfo from './AccountPrivacyInfo';
+import { ScrollRestoration } from 'react-router';
 
 const AccountSection = () => {
     return (
         <div>
+            <ScrollRestoration />
 
             {/* account actions  */}
             <div className='grid grid-cols-2 gap-12 py-12 border-b '>

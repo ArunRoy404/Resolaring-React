@@ -21,15 +21,19 @@ const WithdrawPage = () => {
                 <div className='flex justify-between items-center'>
                     <p className='text-3xl font-semibold'>$5000</p>
                     <Button
-                    size={'lg'}
-                    className={'text-white bg-brand-primary border border-brand-primary hover:text-black hover:bg-white'}
+                        size={'lg'}
+                        className={'text-white bg-brand-primary border border-brand-primary hover:text-black hover:bg-white'}
                     >
                         Withdraw amount
                     </Button>
                 </div>
             </div>
 
-            <DashboardTable columns={WithdrawTableColumn} data={earningData} />
+            <DashboardTable
+                columns={WithdrawTableColumn}
+                data={earningData}
+                isPagination
+            />
         </div>
     );
 };

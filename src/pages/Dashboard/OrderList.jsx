@@ -18,7 +18,11 @@ const OrderList = () => {
                 List
             </DashboardHeader>
 
-            <DashboardTable data={ordersHistory} columns={OrdersColumn} />
+            <DashboardTable
+                data={ordersHistory}
+                columns={OrdersColumn}
+                isPagination
+            />
         </div>
     );
 };

@@ -18,7 +18,7 @@ import { useEffect, useState } from "react"
 import Loader from "../Loader"
 
 
-export function DashboardTable({ data, columns }) {
+export function DashboardTable({ data, columns, isPagination }) {
     const [selectedData, setSelectedData] = useState([...data].slice(0, 10))
     const [pagination, setPagination] = useState({
         currentIndex: 0,
@@ -123,13 +123,16 @@ export function DashboardTable({ data, columns }) {
 
 
             {/* pagination  */}
-            <div className="py-8">
-                <DashboardPagination
-                    pagination={pagination}
-                    setPagination={setPagination}
-                    length={data.length}
-                />
-            </div>
+            {
+                !!isPagination &&
+                <div className="py-8">
+                    <DashboardPagination
+                        pagination={pagination}
+                        setPagination={setPagination}
+                        length={data.length}
+                    />
+                </div>
+            }
         </div>
     )
 }

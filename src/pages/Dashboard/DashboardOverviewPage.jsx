@@ -1,5 +1,4 @@
 import DashboardHeader from '@/components/common/DashboardComponents/DashboardHeader';
-import DashboardPagination from '@/components/common/DashboardComponents/DashboardPagination';
 import DashboardStats from '@/components/common/DashboardComponents/DashboardStats';
 import DashboardTable from '@/components/common/DashboardComponents/DashboardTable';
 import OrdersColumn from '@/components/common/DashboardComponents/OrdersColumn';
@@ -21,7 +20,11 @@ const DashboardOverviewPage = () => {
                 Order History
             </DashboardHeader>
 
-            <DashboardTable data={ordersHistory} columns={OrdersColumn} />
+            <DashboardTable
+                isPagination
+                data={ordersHistory}
+                columns={OrdersColumn}
+            />
         </div>
     );
 };
