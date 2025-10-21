@@ -7,6 +7,7 @@ import {
 import ProfileTabSection from "./ProfileTabSection"
 import ProfileGallerySection from "./ProfileGallerySection"
 import GalleryUploadSection from "./GalleryUploadSection";
+import GalleryLikeSection from "./GalleryLikeSection";
 
 
 
@@ -45,7 +46,7 @@ export function GalleryTab() {
 
 
                 <TabsContent value="likes">
-
+                    <GalleryLikeSection />
                 </TabsContent>
             </Tabs>
         </div>
