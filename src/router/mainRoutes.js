@@ -10,6 +10,7 @@ import SupportPage from "@/pages/Landing/SupportPage";
 import AccountPage from "@/pages/Landing/AccountPage";
 import OrdersPage from "@/pages/Landing/OrdersPage";
 import ProfilePage from "@/pages/Landing/ProfilePage";
+import BookingPage from "@/pages/Landing/BookingPage";
 
 const mainRoutes = {
     path: "/",
@@ -62,6 +63,10 @@ const mainRoutes = {
             path: '/profile',
             Component: ProfilePage,
             loader: () => fetch('/equipments.json')
+        },
+        {
+            path: '/bookings',
+            Component: BookingPage,
         },
     ]
 }
