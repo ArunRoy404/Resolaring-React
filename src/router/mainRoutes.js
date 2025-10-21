@@ -61,6 +61,7 @@ const mainRoutes = {
         {
             path: '/profile',
             Component: ProfilePage,
+            loader: () => fetch('/equipments.json')
         },
     ]
 }

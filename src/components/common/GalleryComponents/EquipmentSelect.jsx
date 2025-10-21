@@ -6,12 +6,15 @@ const EquipmentSelect = ({ setOpenDialog }) => {
     return (
         <Select
             value={''}
-            onValueChange={(value)=>setOpenDialog(value)}
+            onValueChange={(value) => setOpenDialog(value)}
         >
             <SelectTrigger className="border-none shadow-none text-lg font-medium pr-0 [&>svg]:hidden">
                 <span><EllipsisVertical /></span>
             </SelectTrigger>
-            <SelectContent className={'rounded'}>
+            <SelectContent
+                side='right'
+                align='start'
+                className={'rounded'}>
                 <SelectGroup>
                     <SelectItem value='download'>
                         <Download />
